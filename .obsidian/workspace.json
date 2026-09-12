@@ -168,7 +168,7 @@
             }
           },
           {
-            "id": "7dbb40c84b09180e",
+            "id": "44ea68e98ca6d584",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -208,9 +208,10 @@
   },
   "active": "7e86fb39a672bf3f",
   "lastOpenFiles": [
+    "Welcome.md",
+    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
     "Képregény Tracker.md",
-    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "Egyetem/Logika",
     "Egyetem/Op Rendszserek",
@@ -229,7 +230,6 @@
     "Sablonok",
     "2026-05-19.md",
     "Comics",
-    "Welcome.md",
     "Untitled.canvas",
     "Untitled.base"
   ]

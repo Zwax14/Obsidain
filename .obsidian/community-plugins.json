@@ -9,7 +9,6 @@
   "execute-code",
   "obsidian-latex-suite",
   "obsidian-excalidraw-plugin",
-  "obsidian-spaced-repetition",
   "table-editor-obsidian",
   "obsidian-kanban",
   "pdf-plus",
@@ -18,5 +17,6 @@
   "quickadd",
   "obsidian-citation-plugin",
   "tag-wrangler",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-spaced-repetition"
 ]

@@ -1,7 +1,7 @@
 {
   "settings": {
     "flashcardTags": [
-      ""
+      "flashcards"
     ],
     "flashcardTagsToIgnore": [],
     "convertFoldersToDecks": false,
@@ -48,8 +48,8 @@
     "initiallyExpandAllSubdecksInTree": true,
     "showContextInCards": true,
     "showIntervalInReviewButtons": true,
-    "flashcardHeightPercentage": 59.97807017543859,
-    "flashcardWidthPercentage": 60.0470035252644,
+    "flashcardHeightPercentage": 60.024752475247524,
+    "flashcardWidthPercentage": 60.01926782273603,
     "flashcardHeightPercentageMobile": 100,
     "flashcardWidthPercentageMobile": 100,
     "flashcardAgainText": "Again",
