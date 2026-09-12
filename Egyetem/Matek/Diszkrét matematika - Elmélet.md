@@ -153,6 +153,13 @@ A "speciális" azt jelenti: ha $(x, y_1) \in f$ és $(x, y_2) \in f$ (tehát ugy
 ![Bevezető példa: másodfokú függvény](assets/01_bevezeto_masodfoku.png)
 *A piros pontok a gyökök, ahol $f(x) = 0$ (itt $x=1$ és $x=2$).*
 
+> [!example]- Interaktív (Desmos plugin szükséges)
+> ```desmos-graph
+> left=-3; right=6; top=11; bottom=-3
+> ---
+> f(x)=x^2-3x+2
+> ```
+
 ### 2.2 Mikor NEM függvény valami?
 
 Ez az egyik leggyakoribb hibaforrás, ezért külön kiemelve, **hülyebiztos** módon:
@@ -187,6 +194,16 @@ Egy hozzárendelés **akkor és csak akkor** függvény, ha **minden** $x$-hez *
 
 ![Elemi függvények 1](assets/02_elemi_fuggvenyek_1.png)
 
+> [!example]- Interaktív (Desmos plugin szükséges) — csúsztasd, nagyítsd!
+> ```desmos-graph
+> left=-5; right=7; top=10; bottom=-6
+> ---
+> f(x)=2
+> g(x)=1.5x+1
+> h(x)=x(x-4)
+> p(x)=x^3-x
+> ```
+
 A másodfokú függvény **gyöktényezős alakja**:
 $$f(x) = a\left(x - \frac{-b+\sqrt{b^2-4ac}}{2a}\right)\left(x - \frac{-b-\sqrt{b^2-4ac}}{2a}\right)$$
 azaz $f(x) = a(x-x_1)(x-x_2)$, ahol $x_1, x_2$ a másodfokú egyenlet gyökei (megoldásai). A fenti ábrán ($f(x)=x(x-4)$) a piros pontok pontosan ezek a gyökök: $x_1=0$, $x_2=4$.
@@ -195,6 +212,15 @@ azaz $f(x) = a(x-x_1)(x-x_2)$, ahol $x_1, x_2$ a másodfokú egyenlet gyökei (m
 
 ![Exponenciális és logaritmus](assets/03_exp_log.png)
 
+> [!example]- Interaktív (Desmos plugin szükséges) — az $a$ egy csúszkával állítható!
+> ```desmos-graph
+> left=-4; right=6; top=8; bottom=-2
+> ---
+> a=2
+> f(x)=a^x
+> g(x)=\log_a(x)
+> ```
+
 - Ha $a>1$: az exponenciális **szigorúan nő**, a logaritmus is **nő**.
 - Ha $0<a<1$: az exponenciális **csökken**, a logaritmus is **csökken**.
 - Az exponenciális **soha nem lehet 0 vagy negatív** — ezért a logaritmus értelmezési tartománya csak a **pozitív** számok halmaza ($x>0$).
@@ -202,6 +228,17 @@ azaz $f(x) = a(x-x_1)(x-x_2)$, ahol $x_1, x_2$ a másodfokú egyenlet gyökei (m
 **Trigonometrikus, abszolútérték, előjel, identikus:**
 
 ![Trig, abszolútérték, előjel, identikus](assets/04_trig_abs_sgn_id.png)
+
+> [!example]- Interaktív (Desmos plugin szükséges)
+> ```desmos-graph
+> left=-4; right=4; top=4; bottom=-4
+> ---
+> f(x)=\sin(x)
+> g(x)=\cos(x)
+> h(x)=|x|
+> i(x)=\operatorname{sign}(x)
+> j(x)=x
+> ```
 
 - Az **abszolútérték-függvény** ($\lvert x \rvert$): "levágja" az előjelet, mindig nem-negatív értéket ad.
 - Az **előjelfüggvény** ($\operatorname{sgn}(x)$): $+1$, ha $x>0$; $-1$, ha $x<0$; $0$, ha $x=0$. A karikás pont az ábrán azt jelzi, hogy az az érték **nincs** ott felvéve (a függvény "ugrik").
@@ -246,6 +283,15 @@ A bijektív függvényt **kölcsönösen egyértelmű** hozzárendelésnek is ne
 
 ![Injektív, szürjektív, bijektív](assets/05_injektiv_szurjektiv_bijektiv.png)
 
+> [!example]- Interaktív (Desmos plugin szükséges) — próbáld ki a vízszintes egyenes tesztet!
+> ```desmos-graph
+> left=-4; right=4; top=8; bottom=-8
+> ---
+> f(x)=x^3
+> g(x)=x^2
+> y=4
+> ```
+
 - **Bal oldal** ($f(x)=x^3$, $\mathbb{R}\to\mathbb{R}$): **bijektív** — szigorúan növő (tehát injektív), és minden valós számot elér (szürjektív).
 - **Középső** ($f(x)=x^2$): **nem injektív** — a piros pontok mutatják, hogy $x=-2$ és $x=2$ **ugyanoda** ($y=4$) képez. A vízszintes szaggatott vonal két helyen metszi a görbét → bukik az injektivitás.
 - **Jobb oldal** ($f(x)=\tanh x$, mint szemléltető példa "korlátos" függvényre): ha a képteret $\mathbb{R}$-nek deklaráljuk, **nem szürjektív**, mert az értékkészlete csak a $(-1,1)$ nyílt intervallum — az 1 és -1 közötti tartományon kívüli értékeket (pl. $y=2$) soha nem éri el.
@@ -276,23 +322,45 @@ A bijektív függvényt **kölcsönösen egyértelmű** hozzárendelésnek is ne
 
 ---
 
-## Függelék: Interaktív, GeoGebra-szerű grafikonok Obsidianban (opcionális)
+## Függelék: Interaktív grafikonok Obsidianban — Desmos vs. GeoGebra
 
-A fenti ábrák statikus képek (mindig működnek, semmilyen plugin nem kell hozzájuk). Ha szeretnél **interaktív**, nagyítható/mozgatható grafikonokat közvetlenül a jegyzetben, két jó irány van:
+A fenti ábrák **statikus PNG-k** (mindig működnek, semmilyen plugin nem kell hozzájuk). Minden ábra alatt egy összecsukható **"Interaktív (Desmos plugin szükséges)"** callout is található kész `desmos-graph` kódblokkal — ha telepíted a lenti pluginot, ott nagyítható/mozgatható, élő grafikont kapsz ugyanahhoz a példához.
 
-1. **Desmos Graph plugin** (közösségi plugin, Community Plugins → keresd rá: "Desmos Graph"). Telepítés után egy ilyen kódblokkal be tudsz ágyazni egy élő, interaktív Desmos-grafikont:
+### Miért Desmos, és nem GeoGebra?
 
-   ```desmos-graph
-   left=-10; right=10; top=10; bottom=-10
-   ---
-   y = x^2 - 3x + 2
-   ```
+| Szempont | **Desmos Graph** | GeoGebra |
+|---|---|---|
+| Hivatalos Obsidian community plugin | ✅ igen, a beépített plugin-böngészőből telepíthető | ❌ nincs elfogadott, karbantartott hivatalos plugin |
+| Beágyazás | egyszerű `desmos-graph` kódblokk, LaTeX-es képletekkel | csak nyers `<iframe>`, ami egy előre publikált geogebra.org-appletre mutat |
+| Offline működés | ✅ igen, cache-eli a grafikonokat | ❌ nem, mindig lekéri geogebra.org-ról |
+| PDF-exportba belefér | ✅ igen (kapcsoló a plugin beállításaiban) | ❌ jellemzően nem |
+| Előfeltétel | semmi, minden a jegyzetben van | előbb létre + publikálni kell egy GeoGebra-appletet |
 
-2. **GeoGebra beágyazás HTML-lel**: az Obsidian engedélyezi nyers HTML `<iframe>` beágyazását a jegyzetbe, így egy GeoGebra Classic applet is elhelyezhető:
+**Röviden: a Desmos a jobb és tartósabb választás Obsidianhoz** — ezért minden interaktív blokkot ezzel készítettem.
 
-   ```html
-   <iframe scrolling="no" title="Másodfokú függvény" src="https://www.geogebra.org/material/iframe/id/xxxxx/width/700/height/500/border/888888" width="700" height="500" style="border:0px;"> </iframe>
-   ```
-   (Az `id/xxxxx` helyére egy saját, publikusan mentett GeoGebra-applet azonosítója kerül a geogebra.org-ról.)
+### Telepítés
 
-Mindkét megoldáshoz internetkapcsolat kell megnyitáskor, és plugin/engedély-beállítás szükséges — ezért ajánlott elsődlegesen a fenti beágyazott statikus ábrákra hagyatkozni, ezek offline is mindig megjelennek.
+`Settings → Community plugins → Browse` → keresd rá: **"Desmos"** (szerző: `nigecat`) → *Install* → *Enable*. Utána a fenti `desmos-graph` kódblokkok automatikusan élő grafikonként jelennek meg.
+
+### Alap szintaxis, ha saját grafikont szeretnél hozzáadni
+
+````
+```desmos-graph
+left=-10; right=10; top=10; bottom=-10
+---
+y = x^2 - 3x + 2
+```
+````
+
+- A `---` felett vannak a beállítások (`left/right/top/bottom` a nézeti tartomány, illetve `width`, `height`, `grid=false`).
+- A `---` alatt tetszőleges számú egyenlet írható, soronként egy, LaTeX-formátumban (pl. `\sin(x)`, `\log_a(x)`).
+- Ha egy betűt (pl. `a`) egyenlet nélkül definiálsz (`a=2`), a Desmos automatikusan egy **állítható csúszkát** rak ki hozzá — ezt használtam ki fent az exponenciális/logaritmus példánál.
+
+### Ha mégis GeoGebrát szeretnél (nem ajánlott, de lehetséges)
+
+Az Obsidian engedélyezi nyers HTML `<iframe>` beágyazását, tehát technikailag működik egy publikusan mentett GeoGebra Classic appletre mutatva:
+
+```html
+<iframe scrolling="no" title="Másodfokú függvény" src="https://www.geogebra.org/material/iframe/id/xxxxx/width/700/height/500/border/888888" width="700" height="500" style="border:0px;"></iframe>
+```
+(Az `id/xxxxx` helyére egy saját, publikusan mentett GeoGebra-appletid kerül a geogebra.org-ról.) Ehhez viszont mindig internetkapcsolat kell, és minden egyes ábrához külön appletet kell előtte létrehoznod és publikálnod a geogebra.org fiókodban — ezért ezt csak akkor érdemes választani, ha kifejezetten GeoGebra-specifikus eszközökre (pl. csúszós geometriai szerkesztésre) van szükséged, amit a Desmos nem tud.
