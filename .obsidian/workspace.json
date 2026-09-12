@@ -11,14 +11,16 @@
             "id": "7e86fb39a672bf3f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
-                "mode": "preview",
-                "source": false
+                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "page": 10,
+                "left": -8,
+                "top": 73,
+                "zoom": 1.8851575264087421
               },
-              "icon": "lucide-file",
-              "title": "python_referencia_konyv"
+              "icon": "lucide-file-text",
+              "title": "DiMat_ea"
             }
           }
         ]
@@ -208,8 +210,12 @@
   },
   "active": "7e86fb39a672bf3f",
   "lastOpenFiles": [
-    "Sablonok/Képregény Sablon.md",
+    "Egyetem/PDF/Feladatsor_2026.pdf",
+    "Egyetem/PDF/OP system conepts essentials.pdf",
+    "Egyetem/PDF/DiMat_ea.pdf",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
+    "Egyetem/PDF",
+    "Sablonok/Képregény Sablon.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "Képregény Tracker.md",
     "Welcome.md",
@@ -220,17 +226,13 @@
     "Egyetem/Bevezetes a programozasba",
     "Egyetem",
     "gitingore",
-    "New Text Document.txt",
     "Comics/Spider-Man Deadpool 2016.md",
     "Comics/Deadpool.md",
     "Comics/Deapool.md",
     "Comics/Batman 2016.md",
     "Sablonok/Batman 2016.md",
     "Untitled 1.md",
-    "Sablonok",
     "2026-05-19.md",
-    "Comics",
-    "Untitled.canvas",
-    "Untitled.base"
+    "Untitled.canvas"
   ]
 }
