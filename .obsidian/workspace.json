@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
-                "page": 2,
-                "left": -8,
-                "top": 21,
-                "zoom": 1.8851575264087421
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
+                "page": 1,
+                "left": -10,
+                "top": 842,
+                "zoom": 1.436308535872436
               },
               "icon": "lucide-file-text",
-              "title": "DiMat_ea"
+              "title": "Feladatsor_2026"
             }
           }
         ]
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -220,9 +220,9 @@
   },
   "active": "c8b2bf3a51f43ba7",
   "lastOpenFiles": [
+    "Egyetem/PDF/DiMat_ea.pdf",
     "Egyetem/PDF/OP_system_conepts_essentials.pdf",
     "Egyetem/PDF/Feladatsor_2026.pdf",
-    "Egyetem/PDF/DiMat_ea.pdf",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "Sablonok/Képregény Sablon.md",
