@@ -15,7 +15,7 @@ python_ch13: false
 python_ch14: false
 python_ch15: false
 python_ch16: false
-tags: [python, nexusmind, egyetem]
+tags: [python, nexusmind, egyetem, flashcards]
 ---
 
 # Python referenciakönyv — a nulláról a NexusMind-ig
@@ -83,7 +83,7 @@ A meglévő pluginjaid (Dataview, Git, JS Engine, Meta Bind, Minimal Theme Setti
 | **Advanced Tables** | Markdown-táblázatok kényelmes szerkesztése (Tab-bal ugrás cellák közt, automatikus formázás) | Ebben a dokumentumban rengeteg összehasonlító táblázat van — ez megkönnyíti, ha te magad is bővítenéd őket. |
 | **Kanban** | Tábla-nézet (oszlopok: Tervezett / Folyamatban / Kész) | Hasznos lehet a NexusMind projekt **fázisainak/mérföldköveinek** követésére, amikor odaérünk a teljes specifikációhoz. |
 
-A már meglévő pluginjaid ebben a dokumentumban: a **Meta Bind** adja a fenti pipálható checkboxokat, a **Dataview** a haladás-kijelzőt, a **Templater**-hez lent találsz egy külön gyakorló-sablont, az **Omnisearch** pedig automatikusan jó szolgálatot tesz, ha a `#python` taggel ellátott jegyzeteid közt keresnél (a frontmatterben lévő `tags: [python, nexusmind, egyetem]` ezt támogatja).
+A már meglévő pluginjaid ebben a dokumentumban: a **Meta Bind** adja a fenti pipálható checkboxokat, a **Dataview** a haladás-kijelzőt, a **Templater**-hez lent találsz egy külön gyakorló-sablont, az **Omnisearch** pedig automatikusan jó szolgálatot tesz, ha a `#python` taggel ellátott jegyzeteid közt keresnél. A frontmatterben lévő `tags: [python, nexusmind, egyetem, flashcards]` mind ezt, mind a Spaced Repetition-t támogatja — utóbbi alapból csak a `flashcards` taggel ellátott jegyzeteket vizsgálja.
 
 ---
 
