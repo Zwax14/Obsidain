@@ -4,23 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "79a5d599820135aa",
+        "id": "f404d37621df8991",
         "type": "tabs",
         "children": [
           {
-            "id": "7e86fb39a672bf3f",
+            "id": "c8b2bf3a51f43ba7",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
-                "page": 10,
-                "left": -8,
-                "top": 73,
-                "zoom": 1.8851575264087421
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
+                "page": 1,
+                "left": -12,
+                "top": 674,
+                "zoom": 1.2599197683091543
               },
               "icon": "lucide-file-text",
-              "title": "DiMat_ea"
+              "title": "Feladatsor_2026"
             }
           }
         ]
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comics/Spider-Man Deadpool 2016.md",
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Spider-Man Deadpool 2016"
+              "title": "Backlinks"
             }
           },
           {
@@ -117,12 +117,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comics/Spider-Man Deadpool 2016.md",
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Spider-Man Deadpool 2016"
+              "title": "Outgoing links"
             }
           },
           {
@@ -160,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comics/Spider-Man Deadpool 2016.md",
+                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Spider-Man Deadpool 2016"
+              "title": "Outline"
             }
           },
           {
@@ -175,8 +175,18 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "706c4a90123aec9a",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -184,7 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -208,17 +218,18 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "7e86fb39a672bf3f",
+  "active": "c8b2bf3a51f43ba7",
   "lastOpenFiles": [
+    "Egyetem/PDF/OP_system_conepts_essentials.pdf",
     "Egyetem/PDF/Feladatsor_2026.pdf",
-    "Egyetem/PDF/OP system conepts essentials.pdf",
     "Egyetem/PDF/DiMat_ea.pdf",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
-    "Egyetem/PDF",
-    "Sablonok/Képregény Sablon.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
+    "Sablonok/Képregény Sablon.md",
     "Képregény Tracker.md",
+    "Python referencia könyv.md",
     "Welcome.md",
+    "Egyetem/PDF",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
     "Egyetem/Logika",
     "Egyetem/Op Rendszserek",
