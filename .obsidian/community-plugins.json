@@ -15,5 +15,8 @@
   "pdf-plus",
   "obsidian-tasks-plugin",
   "periodic-notes",
-  "quickadd"
+  "quickadd",
+  "obsidian-citation-plugin",
+  "tag-wrangler",
+  "obsidian-style-settings"
 ]
