@@ -153,13 +153,6 @@ A "speciális" azt jelenti: ha $(x, y_1) \in f$ és $(x, y_2) \in f$ (tehát ugy
 ![Bevezető példa: másodfokú függvény](assets/01_bevezeto_masodfoku.png)
 *A piros pontok a gyökök, ahol $f(x) = 0$ (itt $x=1$ és $x=2$).*
 
-> [!example]- Interaktív (Desmos plugin szükséges)
-> ```desmos-graph
-> left=-3; right=6; top=11; bottom=-3
-> ---
-> f(x)=x^2-3x+2
-> ```
-
 ### 2.2 Mikor NEM függvény valami?
 
 Ez az egyik leggyakoribb hibaforrás, ezért külön kiemelve, **hülyebiztos** módon:
@@ -194,16 +187,6 @@ Egy hozzárendelés **akkor és csak akkor** függvény, ha **minden** $x$-hez *
 
 ![Elemi függvények 1](assets/02_elemi_fuggvenyek_1.png)
 
-> [!example]- Interaktív (Desmos plugin szükséges) — csúsztasd, nagyítsd!
-> ```desmos-graph
-> left=-5; right=7; top=10; bottom=-6
-> ---
-> f(x)=2
-> g(x)=1.5x+1
-> h(x)=x(x-4)
-> p(x)=x^3-x
-> ```
-
 A másodfokú függvény **gyöktényezős alakja**:
 $$f(x) = a\left(x - \frac{-b+\sqrt{b^2-4ac}}{2a}\right)\left(x - \frac{-b-\sqrt{b^2-4ac}}{2a}\right)$$
 azaz $f(x) = a(x-x_1)(x-x_2)$, ahol $x_1, x_2$ a másodfokú egyenlet gyökei (megoldásai). A fenti ábrán ($f(x)=x(x-4)$) a piros pontok pontosan ezek a gyökök: $x_1=0$, $x_2=4$.
@@ -212,15 +195,6 @@ azaz $f(x) = a(x-x_1)(x-x_2)$, ahol $x_1, x_2$ a másodfokú egyenlet gyökei (m
 
 ![Exponenciális és logaritmus](assets/03_exp_log.png)
 
-> [!example]- Interaktív (Desmos plugin szükséges) — az $a$ egy csúszkával állítható!
-> ```desmos-graph
-> left=-4; right=6; top=8; bottom=-2
-> ---
-> a=2
-> f(x)=a^x
-> g(x)=\log_a(x)
-> ```
-
 - Ha $a>1$: az exponenciális **szigorúan nő**, a logaritmus is **nő**.
 - Ha $0<a<1$: az exponenciális **csökken**, a logaritmus is **csökken**.
 - Az exponenciális **soha nem lehet 0 vagy negatív** — ezért a logaritmus értelmezési tartománya csak a **pozitív** számok halmaza ($x>0$).
@@ -228,17 +202,6 @@ azaz $f(x) = a(x-x_1)(x-x_2)$, ahol $x_1, x_2$ a másodfokú egyenlet gyökei (m
 **Trigonometrikus, abszolútérték, előjel, identikus:**
 
 ![Trig, abszolútérték, előjel, identikus](assets/04_trig_abs_sgn_id.png)
-
-> [!example]- Interaktív (Desmos plugin szükséges)
-> ```desmos-graph
-> left=-4; right=4; top=4; bottom=-4
-> ---
-> f(x)=\sin(x)
-> g(x)=\cos(x)
-> h(x)=|x|
-> i(x)=\operatorname{sign}(x)
-> j(x)=x
-> ```
 
 - Az **abszolútérték-függvény** ($\lvert x \rvert$): "levágja" az előjelet, mindig nem-negatív értéket ad.
 - Az **előjelfüggvény** ($\operatorname{sgn}(x)$): $+1$, ha $x>0$; $-1$, ha $x<0$; $0$, ha $x=0$. A karikás pont az ábrán azt jelzi, hogy az az érték **nincs** ott felvéve (a függvény "ugrik").
@@ -282,15 +245,6 @@ A bijektív függvényt **kölcsönösen egyértelmű** hozzárendelésnek is ne
 ### 3.4 Szemléltető ábra
 
 ![Injektív, szürjektív, bijektív](assets/05_injektiv_szurjektiv_bijektiv.png)
-
-> [!example]- Interaktív (Desmos plugin szükséges) — próbáld ki a vízszintes egyenes tesztet!
-> ```desmos-graph
-> left=-4; right=4; top=8; bottom=-8
-> ---
-> f(x)=x^3
-> g(x)=x^2
-> y=4
-> ```
 
 - **Bal oldal** ($f(x)=x^3$, $\mathbb{R}\to\mathbb{R}$): **bijektív** — szigorúan növő (tehát injektív), és minden valós számot elér (szürjektív).
 - **Középső** ($f(x)=x^2$): **nem injektív** — a piros pontok mutatják, hogy $x=-2$ és $x=2$ **ugyanoda** ($y=4$) képez. A vízszintes szaggatott vonal két helyen metszi a görbét → bukik az injektivitás.
