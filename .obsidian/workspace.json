@@ -200,11 +200,15 @@
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "7dbb40c84b09180e",
   "lastOpenFiles": [
+    "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Képregény Tracker.md",
     "Sablonok/Templater_gyakorlas_sablon.md",

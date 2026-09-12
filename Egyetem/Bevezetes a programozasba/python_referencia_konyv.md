@@ -15,10 +15,7 @@ python_ch13: false
 python_ch14: false
 python_ch15: false
 python_ch16: false
-tags:
-  - python
-  - nexusmind
-  - egyetem
+tags: [python, nexusmind, egyetem]
 ---
 
 # Python referenciakönyv — a nulláról a NexusMind-ig
@@ -33,6 +30,8 @@ Minden fejezetnél ott vannak a **C# összehasonlítások**, mert ez a leggyorsa
 > **Ez a fájl Obsidian-hoz van igazítva**, a nálad telepített pluginokkal: a pipálható négyzetek a **Meta Bind** pluginnal vannak a jegyzet frontmatter-jéhez kötve (tehát a haladásod ténylegesen elmentődik, nem csak vizuális), a link-navigáció Obsidian belső `[[#fejezet]]` hivatkozásokat használ (ez minden Obsidian-verzióban működik, ellentétben a sima markdown-horgonyokkal), a haladás-összesítő pedig **Dataview** (DataviewJS) segítségével számolódik ki automatikusan.
 >
 > **Egyszeri beállítás:** a Dataview beépülő beállításaiban (Settings → Community plugins → Dataview) kapcsold be az **"Enable JavaScript Queries"** opciót, különben a lenti haladás-kijelző nem fog lefutni (ez alapból biztonsági okból ki van kapcsolva).
+>
+> **Flashcardok:** minden fejezet végén található egy `🗂️ Flashcardok` blokk, `Kérdés::Válasz` formátumban — ezeket a **Spaced Repetition** plugin automatikusan felismeri. A bal oldali ikonsávban a kártya-ikonra kattintva (vagy a parancspalettából: "Spaced Repetition: Review flashcards") indíthatod az áttekintést; a plugin optimalizált időzítéssel fogja újra visszakérdezni őket.
 
 ---
 
@@ -114,6 +113,12 @@ print("Szia, NexusMind!")
 
 Nincs `Main` metódus, nincs osztály-kényszer, nincs `;` — egy sima szkript-fájl teteje bármilyen kód lehet, ami közvetlenül lefut, amikor a fájlt futtatod.
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Mi történik a Python forráskóddal, mielőtt lefut?::Bájtkóddá fordul, amit a Python Virtuális Gép (PVM) értelmez sorról sorra.
+Mikor derül ki egy Python programban egy típushiba?::Csak futás közben, amikor a hibás sor ténylegesen lefut.
+Melyik parancs futtat egy Python fájlt a terminálból?::`python3 fajlnev.py`
+
 ---
 
 ## 2. Alaptípusok, változók, operátorok
@@ -153,6 +158,13 @@ MAX_RETRY_COUNT = 5   # ez csak megállapodás, a nyelv nem kényszeríti ki
 Fontos csapda: Python-ban `and`/`or`/`not` **szavak**, nem szimbólumok — ha `&&`-t írsz, hibát kapsz.
 
 **Gyakorlat:** írj egy kifejezést, ami eldönti, hogy egy évszám szökőév-e (`year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)`).
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Hogyan viselkedik egy Python változó típusa futás közben?::Dinamikusan változhat, mert a típus az értékhez, nem a változóhoz tartozik.
+Van-e Pythonnak valódi `const` kulcsszava?::Nincs, csak konvenció (csupa nagybetűs névvel jelöljük).
+Mi az eredménye a `7 // 2` kifejezésnek?::3 (egész osztás)
+Mivel helyettesítjük Pythonban a `&&` és `||` operátorokat?::Az `and` és `or` szavakkal.
 
 ---
 
@@ -199,6 +211,12 @@ while count < 5:
 
 Ugyanúgy működnek, mint C#-ban.
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Mi határozza meg egy Python kódblokk határait `{}` helyett?::A behúzás (indentation).
+Van-e Pythonban `++` operátor?::Nincs, mindig `+= 1`-et kell írni.
+Melyik Python ciklus felel meg leginkább a C# `foreach`-nek?::A `for item in lista:` szerkezet.
+
 ---
 
 ## 4. Sztringkezelés
@@ -240,6 +258,12 @@ s[::-1]     # "dniMsuxeN" — megfordítja a stringet
 
 **Gyakorlat:** írj egy függvényt, ami egy mondatból (pl. egy GitHub commit-üzenetből) kiszedi a szavakat (`.split()`), megszámolja őket, és visszaadja a leghosszabb szót.
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Módosítható-e egy Python string a helyén (mutable)?::Nem, a `str` immutable — minden módosító metódus új stringet ad vissza.
+Mi az f-string szintaxisa?::`f"szöveg {változó}"`
+Mit ad vissza az `s[::-1]`?::A string megfordítva.
+
 ---
 
 ## 5. Standard I/O
@@ -263,6 +287,11 @@ age = int(input("Add meg az életkorod: "))  # explicit konvertálni kell
 ⚠️ **Fontos csapda:** az `input()` mindig `str`-t ad vissza, akkor is, ha számot gépelsz be — neked kell explicit konvertálnod (`int()`, `float()`).
 
 **C# összehasonlítás:** ez a `Console.ReadLine()` megfelelője — ott is stringet kapsz vissza, és neked kell `int.Parse()`-olnod. Ebben a két nyelv szinte azonos.
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Milyen típust ad vissza mindig az `input()`?::Mindig `str`-t, még számbevitel esetén is.
+Hogyan függeszted fel a sortörést a `print()`-nél?::Az `end=""` paraméterrel.
 
 ---
 
@@ -330,6 +359,12 @@ matrix[1][2]   # 6 — sor, oszlop indexeléssel
 
 Komolyabb numerikus munkához (ha később adatanalitikai résznél kell) a `numpy` csomag `ndarray`-je sokkal hatékonyabb, mint a nyers `list of list`.
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+A Python `list` a háttérben láncolt lista vagy dinamikus tömb?::Dinamikus tömb (akárcsak a C# `List<T>`).
+Melyik adatszerkezet garantálja az egyedi elemeket?::A `set`.
+Hogyan kérdezel le biztonságosan egy `dict` kulcsot, ami esetleg nem létezik?::A `.get(kulcs, alapérték)` metódussal.
+
 ---
 
 ## 7. Függvények (alprogramok)
@@ -380,6 +415,12 @@ def factorial(n: int) -> int:
 ```
 
 Ugyanaz az elv, mint C#-ban — bázisest + rekurzív hívás. Python alapból kb. 1000 mélységű rekurziót enged (`sys.setrecursionlimit()`-tel állítható, de mélyebb rekurzióhoz inkább ciklust érdemes írni).
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Mi történik, ha egy függvényen belül értéket adsz egy globális névvel megegyező változónak, `global` nélkül?::Egy új, lokális változó jön létre, a globális változatlan marad.
+Mire való a `*args` egy függvénydefinícióban?::Tetszőleges számú pozícionális paraméter átvételére.
+Mi a rekurzió bázisesete?::Az a feltétel, ami megállítja a további rekurzív hívásokat.
 
 ---
 
@@ -445,6 +486,12 @@ Ez a `arr[j], arr[j+1] = arr[j+1], arr[j]` sor Python-specifikus idióma — egy
 
 **Gyakorlat:** valósítsd meg mindhárom alapalgoritmust **előbb pszeudokódban**, aztán Pythonban, egy önmagad választotta listán (pl. GitHub issue-k száma naponta).
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Milyen három klasszikus alapalgoritmust tárgyal ez a fejezet?::Összegzés, számlálás, lineáris keresés.
+Mit ad vissza a lineáris keresés, ha nem találja az elemet?::-1-et (megállapodás szerint).
+Mi az akkumulátor-változó szerepe ezekben az algoritmusokban?::Ciklusonként frissül, és a végén tartalmazza az eredményt (pl. összeg, darabszám).
+
 ---
 
 ## 9. Hibakezelés
@@ -473,6 +520,11 @@ class InvalidConfigError(Exception):
 
 raise InvalidConfigError("Hiányzó API kulcs")
 ```
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Mikor fut le a Python `try`-`except` `else` blokkja?::Csak akkor, ha NEM történt hiba a try blokkban.
+Hogyan hozol létre saját kivétel osztályt Pythonban?::Egy `Exception`-ből örökölt osztállyal (`class SajatHiba(Exception): pass`).
 
 ---
 
@@ -545,6 +597,12 @@ Ez lesz a NexusMind-ban a "GitHub/Spotify/Steam forrás" közös absztrakciója 
 
 A harmadik eszköz, a **`typing.Protocol`** (strukturális interfész — nem kell explicit örökölni belőle, elég ha megvannak a metódusok) inkább haladó, statikus típusellenőrzéshez (`mypy`) hasznos — egyelőre elég, ha tudod, hogy létezik.
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Mi a `self` szerepe egy Python metódusban?::A C# `this`-nek felel meg, de explicit paraméterként kell mindig szerepelnie.
+Van-e Pythonnak `static class` kulcsszava?::Nincs — helyette `@staticmethod`/`@classmethod` vagy modul-szintű függvények.
+Hogyan valósítasz meg "interfészt" Pythonban?::`abc.ABC` + `@abstractmethod`, vagy `typing.Protocol`.
+
 ---
 
 ## 11. Modulok és csomagkezelés
@@ -571,6 +629,11 @@ pip freeze > requirements.txt # függőségek listázása
 ```
 
 **C# összehasonlítás:** ez nagyjából a NuGet-csomagok projektenkénti izolációjának felel meg, csak explicit lépésekkel — Python nem csinálja automatikusan projektenként, neked kell létrehoznod és aktiválnod a venv-et. PyCharm ezt vizuálisan is segíti (Settings → Python Interpreter).
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Mire való a Python `venv`?::Projektenkénti izolált csomagkörnyezet létrehozására.
+Melyik paranccsal hozol létre virtuális környezetet?::`python -m venv .venv`
 
 ---
 
@@ -611,6 +674,11 @@ issue = Issue.model_validate_json(data)   # validál ÉS parse-ol egy lépésben
 
 **Miért fontos ez a projektben:** a Pydantic modellek lesznek a "nyelvtan" minden gRPC üzenethez, minden külső API-válaszhoz (GitHub, Spotify, Steam) — ezek adják a típusos határfelületet a C# oldal felé.
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Kényszerítik-e ki futásidőben a type hintek a megadott típust?::Nem, csak dokumentációs/IDE-célt szolgálnak — Python futáskor nem ellenőrzi.
+Mi a Pydantic `BaseModel` fő előnye a sima `@dataclass`-hoz képest?::Automatikus validáció és JSON parse/serialize egy lépésben.
+
 ---
 
 ## 13. Async/await
@@ -641,6 +709,11 @@ asyncio.run(main())
 - **Python:** `asyncio`, `async/await`, **egyszálú event loop** — fogalmilag közelebb áll a JS modellhez, mint a C#-éhoz. Nincs automatikus szálváltás; egy `async` függvény csak `await`-nél adja át a vezérlést.
 
 Ez a hasonlóság (Python ≈ JS az async modellben) megkönnyíti a dolgodat — a React-tapasztalatod jó intuíciót ad.
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Melyik nyelv async-modellje áll közelebb a Pythonhoz: a JavaScript vagy a C#?::A JavaScript (mindkettő egyszálú event loopot használ).
+Mire való az `asyncio.gather()`?::Több async függvény párhuzamos futtatására.
 
 ---
 
@@ -681,6 +754,10 @@ asyncio.run(main())
 ```
 
 Ha ez lefut nálad — gratula, gyakorlatilag a NexusMind Python-modul első vertikális szeletének "csontváza" kész: valós API + async I/O + Pydantic validáció + saját algoritmus egy helyen.
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Milyen sorrendben kapcsolódnak össze ebben a fejezetben a rétegek?::httpx (hívás) → Pydantic (validáció) → saját algoritmus (feldolgozás).
 
 ---
 
@@ -766,6 +843,12 @@ def test_count_bugs(sample_issues):
 
 Ez a fejezet, a 9–14.-hez hasonlóan, túlmutat a hivatalos egyetemi tematikán — ez már kifejezetten a NexusMind-projekthez és a nálad meglévő tesztelési szemlélethez kapcsolódó, szerves következő lépés.
 
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Mi a pytest megfelelője az xUnit `[Fact]` attribútumának?::Nincs szükség dekorátorra, elég ha a függvény neve `test_`-tel kezdődik.
+Mivel helyettesíted Pythonban a Moq mock-objektumait?::Az `unittest.mock` modullal (pl. `AsyncMock`).
+Mire való a `@pytest.fixture`?::Újrafelhasználható, tesztek közti előkészítő logika biztosítására.
+
 ---
 
 ## 16. Megfelelési táblázat a hivatalos tematikához
@@ -785,6 +868,11 @@ Ez a fejezet, a 9–14.-hez hasonlóan, túlmutat a hivatalos egyetemi tematiká
 | Alapvető algoritmusok (összegzés, számlálás, keresés) | 8. |
 
 A 10–15. fejezetek már túlmutatnak a hivatalos tematikán — ezek a NexusMind projekthez szükséges haladó réteg (OOP, csomagkezelés, típusosítás, async, valós integráció, automatizált tesztelés).
+
+#### 🗂️ Flashcardok (Spaced Repetition)
+
+Melyik fejezet fedi a hivatalos tematika "algoritmusleíró eszköz" pontját?::A 8. fejezet.
+Melyik fejezetek számítanak a hivatalos egyetemi tematikán túlmutató, projekt-specifikus anyagnak?::A 10–15. fejezetek.
 
 ---
 
