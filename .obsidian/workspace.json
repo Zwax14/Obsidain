@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+                "file": "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Diszkrét matematika - Elmélet"
+              "title": "python_referencia_konyv"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 301.5,
+    "collapsed": true
   },
   "right": {
     "id": "5f1a29e1f246a065",
@@ -216,7 +217,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "44ea68e98ca6d584",
+  "active": "c8b2bf3a51f43ba7",
   "lastOpenFiles": [
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
     "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
