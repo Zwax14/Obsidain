@@ -15,7 +15,11 @@ python_ch13: false
 python_ch14: false
 python_ch15: false
 python_ch16: false
-tags: [python, nexusmind, egyetem, flashcards]
+tags:
+  - python
+  - nexusmind
+  - egyetem
+  - flashcards
 ---
 
 # Python referenciakönyv — a nulláról a NexusMind-ig
@@ -853,19 +857,19 @@ Mire való a `@pytest.fixture`?::Újrafelhasználható, tesztek közti előkész
 
 ## 16. Megfelelési táblázat a hivatalos tematikához
 
-| Hivatalos tematika eleme | Fejezet |
-|---|---|
-| Forráskód, fordítás/értelmezés, futtatás | 1. |
-| IDE megismerése | 1. |
-| Konstansok, változók | 2. |
-| Típusok, operátorok | 2. |
-| Standard I/O | 5. |
-| Vezérlési szerkezetek | 3. |
-| Sztringkezelés | 4. |
-| Alprogramok (függvények) | 7. |
-| Tárbeli adatszerkezetek | 6. |
-| Algoritmusleíró eszköz (pszeudokód) | 8. |
-| Alapvető algoritmusok (összegzés, számlálás, keresés) | 8. |
+| Hivatalos tematika eleme                              | Fejezet |
+| ----------------------------------------------------- | ------- |
+| Forráskód, fordítás/értelmezés, futtatás              | 1.      |
+| IDE megismerése                                       | 1.      |
+| Konstansok, változók                                  | 2.      |
+| Típusok, operátorok                                   | 2.      |
+| Standard I/O                                          | 5.      |
+| Vezérlési szerkezetek                                 | 3.      |
+| Sztringkezelés                                        | 4.      |
+| Alprogramok (függvények)                              | 7.      |
+| Tárbeli adatszerkezetek                               | 6.      |
+| Algoritmusleíró eszköz (pszeudokód)                   | 8.      |
+| Alapvető algoritmusok (összegzés, számlálás, keresés) | 8.      |
 
 A 10–15. fejezetek már túlmutatnak a hivatalos tematikán — ezek a NexusMind projekthez szükséges haladó réteg (OOP, csomagkezelés, típusosítás, async, valós integráció, automatizált tesztelés).
 
