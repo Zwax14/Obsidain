@@ -11,16 +11,14 @@
             "id": "c8b2bf3a51f43ba7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
-                "page": 4,
-                "left": -8,
-                "top": 70,
-                "zoom": 1.8851575264087421
+                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "DiMat_ea"
+              "icon": "lucide-file",
+              "title": "Diszkrét matematika - Elmélet"
             }
           }
         ]
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -160,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -220,8 +218,16 @@
   },
   "active": "c8b2bf3a51f43ba7",
   "lastOpenFiles": [
-    "Egyetem/PDF/Feladatsor_2026.pdf",
+    "Egyetem/Matek/assets/05_injektiv_szurjektiv_bijektiv.png",
+    "Egyetem/Matek/assets/04_trig_abs_sgn_id.png",
+    "Egyetem/Matek/assets/03_exp_log.png",
+    "Egyetem/Matek/assets/02_elemi_fuggvenyek_1.png",
+    "Egyetem/Matek/assets/01_bevezeto_masodfoku.png",
+    "Egyetem/Matek/assets",
     "Egyetem/PDF/DiMat_ea.pdf",
+    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
+    "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+    "Egyetem/PDF/Feladatsor_2026.pdf",
     "Egyetem/PDF/OP_system_conepts_essentials.pdf",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
@@ -236,7 +242,6 @@
     "Egyetem/Matek",
     "Egyetem/Bevezetes a programozasba",
     "Egyetem",
-    "gitingore",
     "Comics/Spider-Man Deadpool 2016.md",
     "Comics/Deadpool.md",
     "Comics/Deapool.md",
