@@ -173,8 +173,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           },
           {
@@ -216,10 +216,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c8b2bf3a51f43ba7",
+  "active": "44ea68e98ca6d584",
   "lastOpenFiles": [
-    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet (1).md",
     "Egyetem/Matek/Diszkr├⌐t matematika - Elm├⌐let.md",
     "Egyetem/Matek/Diszkr├⌐t matematika - Feladatsor.md",
