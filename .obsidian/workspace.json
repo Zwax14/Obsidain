@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 301.5
   },
   "right": {
     "id": "5f1a29e1f246a065",
@@ -218,11 +218,11 @@
   },
   "active": "c8b2bf3a51f43ba7",
   "lastOpenFiles": [
+    "Egyetem/Matek/Diszkrét matematika - Elmélet (1).md",
     "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkr├⌐t matematika - Elm├⌐let.md",
     "Egyetem/Matek/Diszkr├⌐t matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
-    "Egyetem/Matek/Diszkrét matematika - Elmélet (1).md",
     "Egyetem/Matek/assets/05_injektiv_szurjektiv_bijektiv.png",
     "Egyetem/Matek/assets/04_trig_abs_sgn_id.png",
     "Egyetem/Matek/assets/03_exp_log.png",
