@@ -4,5 +4,6 @@
   "templater-obsidian",
   "omnisearch",
   "obsidian-meta-bind-plugin",
-  "js-engine"
+  "js-engine",
+  "obsidian-git"
 ]

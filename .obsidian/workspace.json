@@ -184,11 +184,17 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "9cc5d95af401647b",
   "lastOpenFiles": [
+    "Egyetem/Logika",
+    "Egyetem/Op Rendszserek",
+    "Egyetem/Matek",
+    "Egyetem/Bevezetes a programozasba",
+    "Egyetem",
     "gitingore",
     "New Text Document.txt",
     "Comics/Spider-Man Deadpool 2016.md",
