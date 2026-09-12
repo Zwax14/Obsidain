@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Képregény Tracker.md",
+                "file": "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Képregény Tracker"
+              "title": "python_referencia_konyv"
             }
           }
         ]
@@ -166,8 +166,19 @@
               "icon": "lucide-list",
               "title": "Outline of Spider-Man Deadpool 2016"
             }
+          },
+          {
+            "id": "7dbb40c84b09180e",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -185,11 +196,15 @@
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "7e86fb39a672bf3f",
+  "active": "7dbb40c84b09180e",
   "lastOpenFiles": [
+    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
+    "Képregény Tracker.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "Egyetem/Logika",
     "Egyetem/Op Rendszserek",
@@ -199,7 +214,6 @@
     "gitingore",
     "New Text Document.txt",
     "Comics/Spider-Man Deadpool 2016.md",
-    "Képregény Tracker.md",
     "Sablonok/Képregény Sablon.md",
     "Comics/Deadpool.md",
     "Comics/Deapool.md",

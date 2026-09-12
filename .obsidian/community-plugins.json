@@ -5,5 +5,11 @@
   "omnisearch",
   "obsidian-meta-bind-plugin",
   "js-engine",
-  "obsidian-git"
+  "obsidian-git",
+  "execute-code",
+  "obsidian-latex-suite",
+  "obsidian-excalidraw-plugin",
+  "obsidian-spaced-repetition",
+  "table-editor-obsidian",
+  "obsidian-kanban"
 ]
