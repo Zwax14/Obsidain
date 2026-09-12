@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
-                "page": 1,
-                "left": -12,
-                "top": 674,
-                "zoom": 1.2599197683091543
+                "file": "Egyetem/PDF/DiMat_ea.pdf",
+                "page": 2,
+                "left": -8,
+                "top": 21,
+                "zoom": 1.8851575264087421
               },
               "icon": "lucide-file-text",
-              "title": "Feladatsor_2026"
+              "title": "DiMat_ea"
             }
           }
         ]
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
+                "file": "Egyetem/PDF/DiMat_ea.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
+                "file": "Egyetem/PDF/DiMat_ea.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
+                "file": "Egyetem/PDF/DiMat_ea.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
