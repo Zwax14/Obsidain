@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
-                "mode": "source",
+                "file": "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cpp_referencia_konyv"
+              "title": "python_referencia_konyv"
             }
           }
         ]
@@ -211,6 +211,7 @@
   },
   "active": "388357c023dbbe88",
   "lastOpenFiles": [
+    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Képregény Tracker.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
@@ -228,7 +229,6 @@
     "Egyetem/Matek/assets",
     "Egyetem/PDF/Feladatsor_2026.pdf",
     "Egyetem/PDF/DiMat_ea.pdf",
-    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "Egyetem/Matek",
     "Egyetem/PDF",
     "Egyetem/Bevezetes a programozasba",
