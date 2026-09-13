@@ -11,16 +11,14 @@
             "id": "c8b2bf3a51f43ba7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Egyetem/PDF/Feladatsor_2026.pdf",
-                "page": 1,
-                "left": -13,
-                "top": 828,
-                "zoom": 1.1868444217472234
+                "file": "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Feladatsor_2026"
+              "icon": "lucide-file",
+              "title": "Diszkrét matematika - Feladatsor"
             }
           }
         ]
@@ -82,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5,
-    "collapsed": true
+    "width": 301.5
   },
   "right": {
     "id": "5f1a29e1f246a065",
@@ -221,8 +218,9 @@
   },
   "active": "c8b2bf3a51f43ba7",
   "lastOpenFiles": [
-    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+    "Egyetem/PDF/Feladatsor_2026.pdf",
+    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet (1).md",
@@ -235,7 +233,6 @@
     "Egyetem/Matek/assets/01_bevezeto_masodfoku.png",
     "Egyetem/Matek/assets",
     "Egyetem/PDF/DiMat_ea.pdf",
-    "Egyetem/PDF/Feladatsor_2026.pdf",
     "Egyetem/PDF/OP_system_conepts_essentials.pdf",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "Sablonok/Képregény Sablon.md",
