@@ -14,7 +14,7 @@ tags: [diszkrét-matematika, feladatsor, gyakorlat]
 - [ ] **1.1** Legyen $A = \{x \in \mathbb{N} \mid x \text{ páros}\}$, $B = \{x \in \mathbb{N} \mid x > 4\}$, valamint $C = \{x \in \mathbb{N} \mid x < 6\}$. Mivel egyenlőek az alábbi halmazok? (Ábrázoljuk is Venn-diagram segítségével!)
   $$B \setminus C,\quad A \setminus (B \cap C),\quad B \triangle C,\quad (B \cup C)\setminus A,\quad \overline{C}\ (\text{alaphalmaz: } \mathbb{N}),\quad A \setminus C$$
 
-- [ ] **1.2** Tekintsük az alábbi halmazokat: $A = \mathbb{Z}$, $B = \{x \in \mathbb{Z} \mid x \text{ páros}\}$, $C = \{0,1,2,3,4\}$. Mivel egyenlőek az alábbiak?
+	- [ ] **1.2** Tekintsük az alábbi halmazokat: $A = \mathbb{Z}$, $B = \{x \in \mathbb{Z} \mid x \text{ páros}\}$,$C = \{0,1,2,3,4\}$. Mivel egyenlőek az alábbiak?
   $$A\setminus B,\quad B\setminus A,\quad A\cap B,\quad B\triangle A,\quad \overline{B}\ (\text{alaphalmaz: } \mathbb{Z}),\quad C\setminus B,\quad B\triangle C$$
 
 - [ ] **1.3** Írjuk fel az $A=\{a,b,c\}$ halmaz hatványhalmazát!
