@@ -15,9 +15,9 @@
               "state": {
                 "file": "Egyetem/PDF/Feladatsor_2026.pdf",
                 "page": 1,
-                "left": -19,
-                "top": 554,
-                "zoom": 0.8076085714861679
+                "left": -13,
+                "top": 828,
+                "zoom": 1.1868444217472234
               },
               "icon": "lucide-file-text",
               "title": "Feladatsor_2026"
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 301.5,
+    "collapsed": true
   },
   "right": {
     "id": "5f1a29e1f246a065",
