@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "32d76d0f4239e43f",
+    "id": "0c8341385a9fd791",
     "type": "split",
     "children": [
       {
-        "id": "f404d37621df8991",
+        "id": "a86782adb8d9a821",
         "type": "tabs",
         "children": [
           {
-            "id": "c8b2bf3a51f43ba7",
+            "id": "388357c023dbbe88",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Diszkrét matematika - Feladatsor"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3e8d37040d6e92c7",
+    "id": "ab07dc3bedf0125f",
     "type": "split",
     "children": [
       {
-        "id": "c5c27b4c415023a8",
+        "id": "94e546126b23e340",
         "type": "tabs",
         "children": [
           {
-            "id": "9cc5d95af401647b",
+            "id": "45fa884fed2c7ace",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,7 +46,7 @@
             }
           },
           {
-            "id": "f7e81ba92fce891d",
+            "id": "12fc7d870c3502d9",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,11 +63,14 @@
             }
           },
           {
-            "id": "0565c0e8681d62c4",
+            "id": "09ee644200fffcd8",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -80,23 +79,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 300
   },
   "right": {
-    "id": "5f1a29e1f246a065",
+    "id": "479030ed2bd035e9",
     "type": "split",
     "children": [
       {
-        "id": "dd2e0b509ff85443",
+        "id": "a14312ce073fa1d4",
         "type": "tabs",
         "children": [
           {
-            "id": "401cb522aa14cacf",
+            "id": "e40675181cfb05e6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+                "file": "Bev Programozas/python_referencia_konyv.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,12 +109,12 @@
             }
           },
           {
-            "id": "fa117aaa1fd98d96",
+            "id": "40f94e9774b8ec74",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+                "file": "Bev Programozas/python_referencia_konyv.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -124,7 +123,7 @@
             }
           },
           {
-            "id": "65a7cf21dc36362e",
+            "id": "0a08ca59427b3172",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -139,7 +138,7 @@
             }
           },
           {
-            "id": "0c55044357c787f2",
+            "id": "cccededed1cf5346",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -153,12 +152,12 @@
             }
           },
           {
-            "id": "87d1147eabeb5f56",
+            "id": "b8159aaf7f165a59",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
+                "file": "Bev Programozas/python_referencia_konyv.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -168,7 +167,7 @@
             }
           },
           {
-            "id": "44ea68e98ca6d584",
+            "id": "585e4ec417ccf459",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -176,83 +175,64 @@
               "icon": "lucide-ghost",
               "title": "review-queue-list-view"
             }
-          },
-          {
-            "id": "706c4a90123aec9a",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
           }
         ],
         "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-kanban:Create new board": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "bases:Create new base": false
     }
   },
-  "active": "9cc5d95af401647b",
+  "active": "585e4ec417ccf459",
   "lastOpenFiles": [
-    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
-    "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
-    "Egyetem/PDF/Feladatsor_2026.pdf",
-    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
-    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
-    "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
-    "Egyetem/Matek/Diszkrét matematika - Elmélet (1).md",
-    "Egyetem/Matek/Diszkr├⌐t matematika - Elm├⌐let.md",
-    "Egyetem/Matek/Diszkr├⌐t matematika - Feladatsor.md",
+    "Sablonok/Templater_gyakorlas_sablon.md",
+    "Sablonok/Képregény Sablon.md",
+    "Sablonok",
+    "Python referencia könyv.md",
+    "Képregény Tracker.md",
+    "Egyetem/PDF/OP_system_conepts_essentials.pdf",
     "Egyetem/Matek/assets/05_injektiv_szurjektiv_bijektiv.png",
     "Egyetem/Matek/assets/04_trig_abs_sgn_id.png",
     "Egyetem/Matek/assets/03_exp_log.png",
     "Egyetem/Matek/assets/02_elemi_fuggvenyek_1.png",
     "Egyetem/Matek/assets/01_bevezeto_masodfoku.png",
+    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
+    "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
     "Egyetem/Matek/assets",
+    "Egyetem/PDF/Feladatsor_2026.pdf",
     "Egyetem/PDF/DiMat_ea.pdf",
-    "Egyetem/PDF/OP_system_conepts_essentials.pdf",
-    "Sablonok/Templater_gyakorlas_sablon.md",
-    "Sablonok/Képregény Sablon.md",
-    "Képregény Tracker.md",
-    "Python referencia könyv.md",
-    "Welcome.md",
-    "Egyetem/PDF",
-    "Egyetem/Logika",
-    "Egyetem/Op Rendszserek",
+    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
+    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "Egyetem/Matek",
+    "Egyetem/PDF",
     "Egyetem/Bevezetes a programozasba",
     "Egyetem",
     "Comics/Spider-Man Deadpool 2016.md",
-    "Comics/Deadpool.md",
-    "Comics/Deapool.md",
-    "Comics/Batman 2016.md",
-    "Sablonok/Batman 2016.md",
-    "Untitled 1.md",
-    "2026-05-19.md",
-    "Untitled.canvas"
+    "Comics",
+    "Bev Programozas/python_frissito_terv.md",
+    "Bev Programozas/python_referencia_konyv.md",
+    "Welcome.md"
   ]
 }
