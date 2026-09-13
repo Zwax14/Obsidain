@@ -20,27 +20,26 @@ A kódrészletek után mindenhol ott a **"miért így?"** magyarázat is: nem el
 
 ## Tartalomjegyzék
 
-1. [Mi a Python, és hogyan fut le egy program](#fejezet-1)
-2. [Alaptípusok, változók, operátorok](#fejezet-2)
-3. [Vezérlési szerkezetek](#fejezet-3)
-4. [Sztringkezelés](#fejezet-4)
-5. [Standard I/O](#fejezet-5)
-6. [Adatszerkezetek: list, tuple, dict, set](#fejezet-6)
-7. [Függvények (alprogramok)](#fejezet-7)
-8. [Algoritmikus gondolkodás és alapalgoritmusok](#fejezet-8)
-9. [Hibakezelés](#fejezet-9)
-10. [Objektumorientált programozás](#fejezet-10)
-11. [Modulok és csomagkezelés](#fejezet-11)
-12. [Típusosítás és Pydantic](#fejezet-12)
-13. [Async/await](#fejezet-13)
-14. [Gyakorlati integráció: valós API-hívás a nulláról](#fejezet-14)
-15. [Automatizált tesztelés: pytest](#fejezet-15)
-16. [Megfelelési táblázat a hivatalos tematikához](#fejezet-16)
+- [[#1. Mi a Python, és hogyan fut le egy program|1. Mi a Python, és hogyan fut le egy program]]
+- [[#2. Alaptípusok, változók, operátorok|2. Alaptípusok, változók, operátorok]]
+- [[#3. Vezérlési szerkezetek|3. Vezérlési szerkezetek]]
+- [[#4. Sztringkezelés|4. Sztringkezelés]]
+- [[#5. Standard I/O|5. Standard I/O]]
+- [[#6. Adatszerkezetek: list, tuple, dict, set|6. Adatszerkezetek: list, tuple, dict, set]]
+- [[#7. Függvények (alprogramok)|7. Függvények (alprogramok)]]
+- [[#8. Algoritmikus gondolkodás és alapalgoritmusok|8. Algoritmikus gondolkodás és alapalgoritmusok]]
+- [[#9. Hibakezelés|9. Hibakezelés]]
+- [[#10. Objektumorientált programozás|10. Objektumorientált programozás]]
+- [[#11. Modulok és csomagkezelés|11. Modulok és csomagkezelés]]
+- [[#12. Típusosítás és Pydantic|12. Típusosítás és Pydantic]]
+- [[#13. Async/await|13. Async/await]]
+- [[#14. Gyakorlati integráció: valós API-hívás a nulláról|14. Gyakorlati integráció: valós API-hívás a nulláról]]
+- [[#15. Automatizált tesztelés: pytest|15. Automatizált tesztelés: pytest]]
+- [[#16. Megfelelési táblázat a hivatalos tematikához|16. Megfelelési táblázat a hivatalos tematikához]]
+
 
 
 ---
-
-<a id="fejezet-1"></a>
 
 ## 1. Mi a Python, és hogyan fut le egy program
 
@@ -83,8 +82,6 @@ Nincs `Main` metódus, nincs osztály-kényszer, nincs `;` a sorok végén. Enne
 - Melyik parancs futtat egy Python fájlt a terminálból? *(`python3 fajlnev.py`)*
 
 ---
-
-<a id="fejezet-2"></a>
 
 ## 2. Alaptípusok, változók, operátorok
 
@@ -167,8 +164,6 @@ print(is_leap)  # True — 2024 szökőév
 - Mivel helyettesítjük Pythonban a `&&` és `||` operátorokat? *(Az `and` és `or` szavakkal.)*
 
 ---
-
-<a id="fejezet-3"></a>
 
 ## 3. Vezérlési szerkezetek
 
@@ -274,8 +269,6 @@ Ez azért fontos, mert a legtöbb Python-kód a második formát fogja használn
 
 ---
 
-<a id="fejezet-4"></a>
-
 ## 4. Sztringkezelés
 
 A `str` Python-ban **immutable** (megváltoztathatatlan) — minden "módosító" metódus valójában egy **új** stringet ad vissza, az eredetit nem érinti. Ez azért fontos, mert stringeket biztonságosan lehet megosztani több hely között a programban anélkül, hogy félned kellene, hogy valaki "a hátad mögött" módosítja őket.
@@ -356,8 +349,6 @@ A `s[::-1]` pontos logikája: mivel a lépésköz negatív, a Python a `kezdő`-
 
 ---
 
-<a id="fejezet-5"></a>
-
 ## 5. Standard I/O
 
 ### Kimenet
@@ -393,8 +384,6 @@ print(f"Jövőre {age + 1} éves leszel.")
 - Hogyan függeszted fel a sortörést a `print()`-nél? *(Az `end=""` paraméterrel.)*
 
 ---
-
-<a id="fejezet-6"></a>
 
 ## 6. Adatszerkezetek: list, tuple, dict, set
 
@@ -589,8 +578,6 @@ Komolyabb numerikus munkához (ha később adatanalitikai résznél kell) a `num
 
 ---
 
-<a id="fejezet-7"></a>
-
 ## 7. Függvények (alprogramok)
 
 ```python
@@ -737,8 +724,6 @@ Ugyanaz az elv, mint C#-ban — bázisest + rekurzív hívás. Python alapból k
 
 ---
 
-<a id="fejezet-8"></a>
-
 ## 8. Algoritmikus gondolkodás és alapalgoritmusok
 
 A hivatalos tematika kifejezetten kéri az **algoritmusleíró eszköz** (pszeudokód) használatát, és a három klasszikus alapalgoritmus-mintát. Ezek mindegyike egy **akkumulátor-változó + ciklus** kombináció: van egy változó, ami az eredményt gyűjti, és a ciklus minden lépésben frissíti.
@@ -821,8 +806,6 @@ A `arr[j], arr[j+1] = arr[j+1], arr[j]` sor Python-specifikus idióma — egy so
 
 ---
 
-<a id="fejezet-9"></a>
-
 ## 9. Hibakezelés
 
 ```python
@@ -866,8 +849,6 @@ Miért érdemes saját kivételosztályt létrehozni ahelyett, hogy egy általá
 - Hogyan hozol létre saját kivétel osztályt Pythonban? *(Egy `Exception`-ből örökölt osztállyal.)*
 
 ---
-
-<a id="fejezet-10"></a>
 
 ## 10. Objektumorientált programozás
 
@@ -1036,8 +1017,6 @@ A harmadik eszköz, a **`typing.Protocol`** (strukturális interfész — nem ke
 
 ---
 
-<a id="fejezet-11"></a>
-
 ## 11. Modulok és csomagkezelés
 
 ### Saját modul
@@ -1077,8 +1056,6 @@ Miért kell külön "virtuális környezet", ha C#-ban a NuGet csomagok simán p
 - Melyik paranccsal hozol létre virtuális környezetet? *(`python -m venv .venv`.)*
 
 ---
-
-<a id="fejezet-12"></a>
 
 ## 12. Típusosítás és Pydantic
 
@@ -1145,8 +1122,6 @@ Miért kell a `@field_validator` fölé is `@classmethod`? Mert a Pydantic a val
 
 ---
 
-<a id="fejezet-13"></a>
-
 ## 13. Async/await
 
 ```python
@@ -1187,8 +1162,6 @@ Ez a hasonlóság (Python ≈ JS az async modellben) megkönnyíti a dolgodat �
 - Mire való az `asyncio.gather()`? *(Több async függvény párhuzamos futtatására.)*
 
 ---
-
-<a id="fejezet-14"></a>
 
 ## 14. Gyakorlati integráció: valós API-hívás a nulláról
 
@@ -1236,8 +1209,6 @@ Ha ez lefut nálad — gratula, gyakorlatilag a NexusMind Python-modul első ver
 - Mire való a `**item` szintaxis egy függvényhívásban? *(Szétbontja a szótárat kulcsszavas argumentumokká.)*
 
 ---
-
-<a id="fejezet-15"></a>
 
 ## 15. Automatizált tesztelés: pytest
 
@@ -1334,8 +1305,6 @@ Egy `@pytest.fixture` egy olyan függvény, amit a `pytest` **automatikusan megh
 - Mire való a `@pytest.fixture`? *(Újrafelhasználható, tesztek közti előkészítő logika biztosítására.)*
 
 ---
-
-<a id="fejezet-16"></a>
 
 ## 16. Megfelelési táblázat a hivatalos tematikához
 

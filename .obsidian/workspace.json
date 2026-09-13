@@ -11,14 +11,10 @@
             "id": "388357c023dbbe88",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "cpp_referencia_konyv"
+              "title": "New tab"
             }
           }
         ]
@@ -211,15 +207,17 @@
   },
   "active": "388357c023dbbe88",
   "lastOpenFiles": [
-    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
-    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv (1).md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
+    "python_referencia_konyv.md",
+    "Python referencia könyv.md",
+    "Egyetem/Bevezetes a programozasba/teszt_link.md",
+    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
+    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Képregény Tracker.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "Sablonok/Képregény Sablon.md",
     "Sablonok",
-    "Python referencia könyv.md",
     "Egyetem/PDF/OP_system_conepts_essentials.pdf",
     "Egyetem/Matek/assets/05_injektiv_szurjektiv_bijektiv.png",
     "Egyetem/Matek/assets/04_trig_abs_sgn_id.png",

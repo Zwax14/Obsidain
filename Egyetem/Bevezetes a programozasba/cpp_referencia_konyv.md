@@ -15,29 +15,28 @@ A C++ egyik legnagyobb különbsége minden eddig tanult nyelvhez képest (Pytho
 
 ## Tartalomjegyzék
 
-1. [Mi a C++, és hogyan fordul le / fut le egy program](#fejezet-1)
-2. [Alaptípusok, változók, operátorok](#fejezet-2)
-3. [Vezérlési szerkezetek](#fejezet-3)
-4. [Sztringkezelés](#fejezet-4)
-5. [Standard I/O](#fejezet-5)
-6. [Adatszerkezetek: tömb, vector, map, set, pair](#fejezet-6)
-7. [Függvények (alprogramok)](#fejezet-7)
-8. [Algoritmikus gondolkodás és alapalgoritmusok](#fejezet-8)
-9. [Hibakezelés](#fejezet-9)
-10. [Mutatók és referenciák](#fejezet-10)
-11. [Memóriakezelés: stack, heap, RAII, smart pointerek](#fejezet-11)
-12. [Objektumorientált programozás](#fejezet-12)
-13. [Fordítási modell: header fájlok, namespace, linkelés](#fejezet-13)
-14. [Template-ek (generikus programozás)](#fejezet-14)
-15. [Move szemantika (modern C++)](#fejezet-15)
-16. [Gyakorlati integráció: fájlfeldolgozás a nulláról](#fejezet-16)
-17. [Automatizált tesztelés: Google Test](#fejezet-17)
-18. [Megfelelési táblázat a hivatalos tematikához](#fejezet-18)
+- [[#1. Mi a C++, és hogyan fordul le / fut le egy program|1. Mi a C++, és hogyan fordul le / fut le egy program]]
+- [[#2. Alaptípusok, változók, operátorok|2. Alaptípusok, változók, operátorok]]
+- [[#3. Vezérlési szerkezetek|3. Vezérlési szerkezetek]]
+- [[#4. Sztringkezelés|4. Sztringkezelés]]
+- [[#5. Standard I/O|5. Standard I/O]]
+- [[#6. Adatszerkezetek: tömb, vector, map, set, pair|6. Adatszerkezetek: tömb, vector, map, set, pair]]
+- [[#7. Függvények (alprogramok)|7. Függvények (alprogramok)]]
+- [[#8. Algoritmikus gondolkodás és alapalgoritmusok|8. Algoritmikus gondolkodás és alapalgoritmusok]]
+- [[#9. Hibakezelés|9. Hibakezelés]]
+- [[#10. Mutatók és referenciák|10. Mutatók és referenciák]]
+- [[#11. Memóriakezelés: stack, heap, RAII, smart pointerek|11. Memóriakezelés: stack, heap, RAII, smart pointerek]]
+- [[#12. Objektumorientált programozás|12. Objektumorientált programozás]]
+- [[#13. Fordítási modell: header fájlok, namespace, linkelés|13. Fordítási modell: header fájlok, namespace, linkelés]]
+- [[#14. Template-ek (generikus programozás)|14. Template-ek (generikus programozás)]]
+- [[#15. Move szemantika (modern C++)|15. Move szemantika (modern C++)]]
+- [[#16. Gyakorlati integráció: fájlfeldolgozás a nulláról|16. Gyakorlati integráció: fájlfeldolgozás a nulláról]]
+- [[#17. Automatizált tesztelés: Google Test|17. Automatizált tesztelés: Google Test]]
+- [[#18. Megfelelési táblázat a hivatalos tematikához|18. Megfelelési táblázat a hivatalos tematikához]]
+
 
 
 ---
-
-<a id="fejezet-1"></a>
 
 ## 1. Mi a C++, és hogyan fordul le / fut le egy program
 
@@ -96,8 +95,6 @@ Az `#include <iostream>` egy **preprocesszor-utasítás**, ami a fordítás *leg
 - Mikor és hogyan dolgozza fel a fordító az `#include`-ot? *(Fordítási időben, a preprocesszor szó szerint beilleszti a hivatkozott fájl tartalmát.)*
 
 ---
-
-<a id="fejezet-2"></a>
 
 ## 2. Alaptípusok, változók, operátorok
 
@@ -195,8 +192,6 @@ Miért? Mert a C++ a `7 / 2` kifejezést a *hozzárendelés előtt*, önmagában
 
 ---
 
-<a id="fejezet-3"></a>
-
 ## 3. Vezérlési szerkezetek
 
 ### if / else if / else
@@ -289,8 +284,6 @@ Miért kell a `break` minden `case` végére? Mert a C++ `switch` alapból **"á
 
 ---
 
-<a id="fejezet-4"></a>
-
 ## 4. Sztringkezelés
 
 C++-ban **két** string-fogalom él egymás mellett — ezt fontos tisztán látni, mert régi kódban és néha teljesítménykritikus helyeken a "régi" formával is találkozol.
@@ -359,8 +352,6 @@ std::cout << s.substr(5) << std::endl;       // "Mind"  — 5. indextől a strin
 
 ---
 
-<a id="fejezet-5"></a>
-
 ## 5. Standard I/O
 
 ### Kimenet
@@ -410,8 +401,6 @@ std::cout << "Szia, " << full_name << "!" << std::endl;
 - Mi a különbség `std::cin >> name` és `std::getline(std::cin, name)` között? *(Az első csak egy szót olvas be szóközig, a második a teljes sort.)*
 
 ---
-
-<a id="fejezet-6"></a>
 
 ## 6. Adatszerkezetek: tömb, vector, map, set, pair
 
@@ -493,8 +482,6 @@ A C++ `std::set`-nek nincs `in` operátora, mint Pythonnak — helyette a `count
 
 ---
 
-<a id="fejezet-7"></a>
-
 ## 7. Függvények (alprogramok)
 
 ### Alapok, és a C++-specifikus paraméterátadási módok
@@ -575,8 +562,6 @@ A C++ (akárcsak C#) megengedi, hogy **ugyanaz a függvénynév** többször is 
 
 ---
 
-<a id="fejezet-8"></a>
-
 ## 8. Algoritmikus gondolkodás és alapalgoritmusok
 
 Ugyanaz a három alapminta, mint a Python-könyvben (összegzés, számlálás, keresés) — de C++-ban ezekre **beépített, könyvtári algoritmusok** is léteznek a `<algorithm>` fejlécben, amiket érdemes megismerni a kézzel írt ciklus mellett.
@@ -651,8 +636,6 @@ A `std::find` visszatérési értéke egy **iterátor**, nem index — ezért ke
 
 ---
 
-<a id="fejezet-9"></a>
-
 ## 9. Hibakezelés
 
 ```cpp
@@ -707,8 +690,6 @@ Miért `: public std::runtime_error(message)` a konstruktor után? Ez az **örö
 - Miért `const std::exception&` a catch paramétere, nem érték szerinti átvétel? *(Elkerüli a felesleges másolást, és megakadályozza a leszármazott kivétel adatainak elvesztését.)*
 
 ---
-
-<a id="fejezet-10"></a>
 
 ## 10. Mutatók és referenciák
 
@@ -792,8 +773,6 @@ A legfontosabb fogalmi különbség: egy **referencia** olyan, mint egy második
 - Mi a fő különbség egy referencia és egy mutató között? *(A referencia soha nem irányítható át és nem lehet "üres"; a mutató mindkettőre képes, beleértve a `nullptr`-t is.)*
 
 ---
-
-<a id="fejezet-11"></a>
 
 ## 11. Memóriakezelés: stack, heap, RAII, smart pointerek
 
@@ -893,8 +872,6 @@ A `std::shared_ptr` belül egy **referenciaszámlálót (reference count)** tart
 - Miért nem másolható a `std::unique_ptr`? *(Mert egyedüli tulajdonjogot képvisel — a másolás kockázatos duplikált felszabadításhoz (double free) vezethetne.)*
 
 ---
-
-<a id="fejezet-12"></a>
 
 ## 12. Objektumorientált programozás
 
@@ -1008,8 +985,6 @@ Miért kell a `virtual ~NotificationSource() = default;` (virtuális destruktor)
 
 ---
 
-<a id="fejezet-13"></a>
-
 ## 13. Fordítási modell: header fájlok, namespace, linkelés
 
 ### Header (.h/.hpp) és forrásfájl (.cpp) szétválasztása
@@ -1077,8 +1052,6 @@ A `namespace` célja pontosan az, mint a Python modulok vagy a C# `namespace X {
 
 ---
 
-<a id="fejezet-14"></a>
-
 ## 14. Template-ek (generikus programozás)
 
 ```cpp
@@ -1121,8 +1094,6 @@ Ez pontosan az a mechanizmus, ami mögött a `std::vector<int>` vagy a `std::map
 - Lassabbak-e a template-ek futásidőben, mint a Python dinamikus típuskezelése? *(Nem — a döntés fordítási időben történik, futásidőben nincs extra "kitalálás".)*
 
 ---
-
-<a id="fejezet-15"></a>
 
 ## 15. Move szemantika (modern C++)
 
@@ -1198,8 +1169,6 @@ Miért fontos ez? Mert így egy nagy objektum (mint a `create_big_vector()` elej
 
 ---
 
-<a id="fejezet-16"></a>
-
 ## 16. Gyakorlati integráció: fájlfeldolgozás a nulláról
 
 Ez a fejezet összeköti a fenti fejezeteket: fájl-I/O → saját osztály (RAII-val) → algoritmus.
@@ -1257,8 +1226,6 @@ Miért nincs sehol `file.close()`? Ez a **RAII elv** (11. fejezet) gyakorlati, m
 
 ---
 
-<a id="fejezet-17"></a>
-
 ## 17. Automatizált tesztelés: Google Test
 
 A **Google Test (gtest)** a C++ egyik legelterjedtebb tesztelési keretrendszere — nagyjából azt a szerepet tölti be, mint az xUnit C#-ban vagy a `pytest` Pythonban.
@@ -1307,8 +1274,6 @@ Miért `EXPECT_EQ(a, b)` és nem egyszerű `assert a == b`, mint Pythonban? Mert
 - Mi a különbség `EXPECT_EQ` és `ASSERT_EQ` között? *(Az `EXPECT_EQ` hiba esetén is folytatja a tesztet, az `ASSERT_EQ` azonnal megszakítja.)*
 
 ---
-
-<a id="fejezet-18"></a>
 
 ## 18. Megfelelési táblázat a hivatalos tematikához
 
