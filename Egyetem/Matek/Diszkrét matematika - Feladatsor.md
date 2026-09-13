@@ -35,7 +35,7 @@ tags: [diszkrét-matematika, feladatsor, gyakorlat]
 - [ ] **1.6** Jelölje $X$ a 2025. szeptember 1-jén 20–22 óra között a "Vak késdobáló" nevű vendéglátóegységben megjelent vendégek halmazát. Részhalmazai: $N$ = nők, $T$ = törzsvendégek (heti ≥4 alkalom), $A$ = alkalmi vendégek (≤2 alkalom eddig), $S$ = sört ivók, $B$ = bort ivók. Fogalmazzuk meg halmazelméleti műveletekkel/relációkkal:
   - (a) A bort ivó alkalmi vendégek között nincs nő.
   - (b) A férfi törzsvendégek sört és bort is isznak.
-  - (c) Nincs olyan sörivó nő, aki törzsvendég.
+  - (c) Nincs olyan sörivó nő, aki törzsvendség.
   - (d) Aki vagy csak sört, vagy csak bort iszik, az alkalmi vendég és nő.
   - (e) Minden alkalmi vendég sörivó.
 
