@@ -11,10 +11,14 @@
             "id": "388357c023dbbe88",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "python_referencia_konyv"
             }
           }
         ]
@@ -207,12 +211,12 @@
   },
   "active": "388357c023dbbe88",
   "lastOpenFiles": [
+    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
+    "Egyetem/Bevezetes a programozasba/teszt_link.md",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv (1).md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
     "python_referencia_konyv.md",
     "Python referencia könyv.md",
-    "Egyetem/Bevezetes a programozasba/teszt_link.md",
-    "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Képregény Tracker.md",
     "Sablonok/Templater_gyakorlas_sablon.md",
