@@ -20,22 +20,24 @@ A kódrészletek után mindenhol ott a **"miért így?"** magyarázat is: nem el
 
 ## Tartalomjegyzék
 
-1. [Mi a Python, és hogyan fut le egy program](#1-mi-a-python-és-hogyan-fut-le-egy-program)
-2. [Alaptípusok, változók, operátorok](#2-alaptípusok-változók-operátorok)
-3. [Vezérlési szerkezetek](#3-vezérlési-szerkezetek)
-4. [Sztringkezelés](#4-sztringkezelés)
-5. [Standard I/O](#5-standard-io)
-6. [Adatszerkezetek: list, tuple, dict, set](#6-adatszerkezetek-list-tuple-dict-set)
-7. [Függvények (alprogramok)](#7-függvények-alprogramok)
-8. [Algoritmikus gondolkodás és alapalgoritmusok](#8-algoritmikus-gondolkodás-és-alapalgoritmusok)
-9. [Hibakezelés](#9-hibakezelés)
-10. [Objektumorientált programozás](#10-objektumorientált-programozás)
-11. [Modulok és csomagkezelés](#11-modulok-és-csomagkezelés)
-12. [Típusosítás és Pydantic](#12-típusosítás-és-pydantic)
-13. [Async/await](#13-asyncawait)
-14. [Gyakorlati integráció: valós API-hívás a nulláról](#14-gyakorlati-integráció-valós-api-hívás-a-nulláról)
-15. [Automatizált tesztelés: pytest](#15-automatizált-tesztelés-pytest)
-16. [Megfelelési táblázat a hivatalos tematikához](#16-megfelelési-táblázat-a-hivatalos-tematikához)
+- [[#1. Mi a Python, és hogyan fut le egy program|1. Mi a Python, és hogyan fut le egy program]]
+- [[#2. Alaptípusok, változók, operátorok|2. Alaptípusok, változók, operátorok]]
+- [[#3. Vezérlési szerkezetek|3. Vezérlési szerkezetek]]
+- [[#4. Sztringkezelés|4. Sztringkezelés]]
+- [[#5. Standard I/O|5. Standard I/O]]
+- [[#6. Adatszerkezetek: list, tuple, dict, set|6. Adatszerkezetek: list, tuple, dict, set]]
+- [[#7. Függvények (alprogramok)|7. Függvények (alprogramok)]]
+- [[#8. Algoritmikus gondolkodás és alapalgoritmusok|8. Algoritmikus gondolkodás és alapalgoritmusok]]
+- [[#9. Hibakezelés|9. Hibakezelés]]
+- [[#10. Objektumorientált programozás|10. Objektumorientált programozás]]
+- [[#11. Modulok és csomagkezelés|11. Modulok és csomagkezelés]]
+- [[#12. Típusosítás és Pydantic|12. Típusosítás és Pydantic]]
+- [[#13. Async/await|13. Async/await]]
+- [[#14. Gyakorlati integráció: valós API-hívás a nulláról|14. Gyakorlati integráció: valós API-hívás a nulláról]]
+- [[#15. Automatizált tesztelés: pytest|15. Automatizált tesztelés: pytest]]
+- [[#16. Megfelelési táblázat a hivatalos tematikához|16. Megfelelési táblázat a hivatalos tematikához]]
+
+
 
 ---
 
@@ -218,11 +220,52 @@ for i in range(10):
 
 Kimenet: `0 1 2 4 5` (soronként), ugyanúgy működnek, mint C#-ban.
 
+### "Truthiness" — amikor nem is `bool`-t írsz az `if` mögé
+
+C#-ban az `if (...)` zárójelébe **csak** `bool` kifejezés kerülhet, a fordító mást nem enged be. Pythonban ezzel szemben **bármilyen** érték állhat egy `if` (vagy `while`) után — a Python ilyenkor automatikusan eldönti, hogy az adott érték "igaz-szerű" (*truthy*) vagy "hamis-szerű" (*falsy*) legyen. Ez egy tisztán Python-specifikus (pontosabban sok dinamikus nyelvre jellemző, de C#-ban nem létező) viselkedés, ezért érdemes pontosan tudni, mi számít hamisnak:
+
+```python
+values = [0, 0.0, "", [], {}, set(), None, False]
+
+for v in values:
+    print(repr(v), "->", bool(v))
+```
+
+Kimenet:
+
+```
+0 -> False
+0.0 -> False
+'' -> False
+[] -> False
+{} -> False
+set() -> False
+None -> False
+False -> False
+```
+
+Vagyis **minden "üresség" vagy "nulla" hamisnak számít**: a szám nulla, az üres string, az üres lista/dict/set, és maga a `None`. Minden más — nem-nulla szám, nem-üres string/lista, bármilyen objektum — igaznak számít. Ez a gyakorlatban azt jelenti, hogy a következő két sor **teljesen egyenértékű**:
+
+```python
+items = []
+
+if len(items) > 0:      # explicit, "C#-os gondolkodású" verzió
+    print("van elem")
+
+if items:                # "pythonic" verzió — ugyanaz, mert az üres lista falsy
+    print("van elem")
+```
+
+Ez azért fontos, mert a legtöbb Python-kód a második formát fogja használni (`if items:`, `if name:`, `if not errors:`), és ha nem ismered ezt a szabályt, elsőre furcsának tűnhet, hogy egy listát vagy stringet közvetlenül egy `if` mögé raknak `len()` vagy `== ""` nélkül.
+
+⚠️ **Csapda:** ebből következik, hogy `if x:` és `if x is not None:` **nem ugyanaz** — ha `x = 0` vagy `x = ""`, az első hamisnak értékeli ki, a második viszont igaznak (hiszen `0` és `""` nem `None`, csak "üres"). Ha kifejezetten azt akarod tudni, hogy egy érték `None`-e (és nem azt, hogy "üres"-e), mindig `is None`/`is not None`-t használj, ne sima `if x:`-et.
+
 ### Gyakorló kérdések
 
 - Mi határozza meg egy Python kódblokk határait `{}` helyett? *(A behúzás/indentation.)*
 - Van-e Pythonban `++` operátor? *(Nincs, mindig `+= 1`-et kell írni.)*
 - Melyik Python ciklus felel meg leginkább a C# `foreach`-nek? *(A `for item in lista:` szerkezet.)*
+- Mi számít "falsy"-nak Pythonban a `bool`, `int`, `str`, `list` típusok esetén? *(A `False`, a `0`/`0.0`, az üres string `""`, és az üres lista `[]` — valamint a `None`.)*
 
 ---
 
@@ -265,15 +308,38 @@ Pi kb. 3.14
 
 ### Szeletelés (slicing) — string és lista is "sorozat" típus
 
-```python
-s = "NexusMind"
-print(s[0])      # "N"       — index 0-tól számolunk
-print(s[0:5])    # "Nexus"   — a végpont KIZÁRÓLAGOS (5. index már nincs benne)
-print(s[-4:])    # "Mind"    — negatív index a végétől számol
-print(s[::-1])   # "dniMsuxeN" — a lépésköz -1, tehát végigmegy, de visszafelé
+Ez az egyik legjellemzőbb Python-specifikus eszköz — más nyelvekben (C#, Java) nincs beépített megfelelője, ott ehhez metódust kellene hívnod (`str.Substring(...)`). Ahhoz, hogy tényleg *logikusan*, ne csak "megjegyzésből" értsd, képzeld el, hogy az indexek nem magukon a karaktereken ülnek, hanem a karakterek **közötti réseken**:
+
+```
+   N   e   x   u   s   M   i   n   d
+ 0   1   2   3   4   5   6   7   8   9
+-9  -8  -7  -6  -5  -4  -3  -2  -1
 ```
 
-Miért `s[0:5]` és nem `s[0:4]`, ha "Nexus" 5 karakter? Mert a szeletelés `[kezdő:vég]` jelölése Pythonban (és sok más nyelvben is) a **kezdőindexet zárja be, a végindexet viszont kizárja** — ez lehetővé teszi, hogy `vég - kezdő` mindig pontosan megadja a kapott elemek számát, ami sok algoritmusban kényelmes tulajdonság.
+Vagyis a `0` a "Nexus..." elejénél lévő rés, az `5` az "s" és "M" közötti rés. Egy `s[kezdő:vég]` szelet mindig azt jelenti: "vágj egy darabot a `kezdő` réstől a `vég` résig". Ez a modell azonnal megmagyarázza az összes viselkedést, nem kell külön szabályokat memorizálnod:
+
+```python
+s = "NexusMind"
+
+print(s[0])       # "N"    — csak az index 0 UTÁNI egyetlen karakter
+print(s[0:5])     # "Nexus" — a 0-ás réstől az 5-ös résig tartó szakasz
+print(s[5:9])     # "Mind"  — az 5-ös réstől a 9-es (=vég) résig
+print(s[-4:])     # "Mind"  — a -4-es rés a végétől számolva ugyanaz a hely, mint az 5-ös elölről; a hiányzó "vég" a string legvégét jelenti
+print(s[:5])      # "Nexus" — a hiányzó "kezdő" a string legelejét jelenti
+```
+
+Miért `s[0:5]` és nem `s[0:4]`, ha "Nexus" 5 karakter hosszú? Mert a fenti rés-modell szerint az `5`-ös index maga a rés az "s" és az "M" *között* van — nem az "M" karaktert jelöli, hanem a *helyet előtte*. Ez a "kezdőt zárja be, véget kizárja" szabály nem önkényes: azért választották így a nyelv tervezői, mert ettől `vég - kezdő` mindig pontosan megadja a kapott karakterek számát (`5 - 0 = 5` karakter), és két szomszédos szelet (`s[0:5]` és `s[5:9]`) hézag és átfedés nélkül pontosan illeszkedik egymáshoz.
+
+A negatív index ugyanezt a rés-vonalzót számolja, csak a végétől: a `-1` az utolsó karakter *előtti* rés (tehát `s[-1]` maga az utolsó karakter), a `-4` a hátulról számolt 4. rés.
+
+A harmadik szám, a **lépésköz**, azt mondja meg, hányasával haladjon a vágás a `kezdő` és `vég` között:
+
+```python
+print(s[::2])    # "NxsidV" — mindenegyet 2., 4., ... karaktert veszi (0., 2., 4., ...index)
+print(s[::-1])   # "dniMsuxeN" — negatív lépésköz: VISSZAFELÉ halad
+```
+
+A `s[::-1]` pontos logikája: mivel a lépésköz negatív, a Python a `kezdő`-t és `vég`-et is az ellenkező irányból értelmezi — hiányzó `kezdő` esetén a string *végétől* indul, hiányzó `vég` esetén a string *elejéig* megy, és minden lépésnél eggyel hátrafelé lép. Ezért lesz belőle a teljes string megfordítva, egyetlen extra függvény vagy ciklus nélkül.
 
 ### Gyakorló kérdések
 
@@ -338,19 +404,98 @@ print(3 in numbers)        # False — tartalmazás-vizsgálat
 
 ⚠️ **Fontos felismerés (OS-tárgyhoz is kapcsolódik):** a Python `list` **nem láncolt lista**, hanem — akárcsak a C# `List<T>` — egy dinamikusan növekvő **tömb** a háttérben, ami folyamatos memóriablokkot használ, és szükség esetén nagyobb blokkra másolja át magát. Ez azt jelenti, hogy az indexeléssel elérés (`numbers[3]`) O(1), de egy elem *elejére* beszúrása (`insert(0, ...)`) O(n), mert minden utána lévő elemet el kell tolni. A klasszikus, mutatókkal összekötött láncolt lista Pythonban nincs beépítve; ha ennek elvét szeretnéd használni (gyors beszúrás elejére/végére), a `collections.deque` áll hozzá legközelebb.
 
+### Referencia-szemantika — a leggyakoribb "rejtélyes bug" forrása Pythonban
+
+Ez egy olyan pont, ami az OOP-fejezetben (10.) és a buborékrendezésnél (8.) is előkerült röviden, de mivel ez okozza a legtöbb kezdő-hibát, itt teljesen végigmegyünk rajta, elejétől a végéig.
+
+Amikor egy Python-változóhoz értéket rendelsz, a változó valójában nem "tartalmazza" az értéket úgy, mint egy doboz — hanem egy **címkét** ragasztasz egy, a memóriában valahol létező objektumra. Két változó *ugyanarra* az objektumra is mutathat egyszerre:
+
+```python
+list_a = [1, 2, 3]
+list_b = list_a        # NEM másolatot csinál — list_b UGYANARRA a listára mutat, mint list_a!
+
+list_b.append(4)
+print(list_a)           # [1, 2, 3, 4] — list_a IS megváltozott, pedig te list_b-t módosítottad!
+print(list_a is list_b) # True — ez az "is" operátor pontosan azt kérdezi: UGYANAZ az objektum-e a kettő?
+```
+
+Nézzük meg, miért van ez így, lépésről lépésre:
+
+1. `list_a = [1, 2, 3]` — a Python létrehoz egy listaobjektumot valahol a memóriában, és a `list_a` címkét ráragasztja.
+2. `list_b = list_a` — ez **nem** hoz létre új listát. Csak egy második címkét (`list_b`) ragaszt *ugyanarra* a már létező objektumra. Ezután `list_a` és `list_b` két különböző név, ugyanahhoz az egy dobozhoz.
+3. `list_b.append(4)` — mivel `list_b` a ugyanarra a dobozra mutat, mint `list_a`, ez a doboz tartalma módosul — és mivel `list_a` is ugyanoda mutat, `list_a`-n keresztül nézve is látszik a változás.
+
+Ez **csak mutable (módosítható) típusoknál** okoz meglepetést — `list`, `dict`, `set`, saját osztálypéldányok. Immutable típusoknál (`int`, `str`, `tuple`, `float`, `bool`) ez a probléma **soha nem jelentkezik**, mert ott nincs "módosítás a helyén" — minden művelet új objektumot hoz létre:
+
+```python
+x = 5
+y = x        # y is az 5-ös objektumra mutat, mint x
+y = y + 1    # ez NEM módosítja az "5" objektumot — létrehoz egy ÚJ "6" objektumot, és y-t arra állítja át
+
+print(x)     # 5 — x-et ez egyáltalán nem érintette
+print(y)     # 6
+```
+
+Ha valódi, független másolatot akarsz egy listából, explicit módon kell kérned:
+
+```python
+list_c = [1, 2, 3]
+list_d = list_c.copy()   # VAGY: list_c[:]  — mindkettő új, független listát hoz létre
+
+list_d.append(99)
+print(list_c)   # [1, 2, 3]      — változatlan
+print(list_d)   # [1, 2, 3, 99]  — csak ez módosult
+```
+
+Ez pontosan az az ok, amiért a 8. fejezet buborékrendezésénél a függvény elején `arr = numbers.copy()` szerepelt: enélkül a `bubble_sort` a hívó *eredeti* listáját forgatta volna át, "melléhatásként" — a `.copy()` nélkül a függvény hívója meglepődne, hogy a saját, eredetinek hitt listája is megváltozott, pedig ő csak egy *új* rendezett listát várt vissza.
+
+**C# összehasonlítás:** ez pontosan ugyanaz a jelenség, mint C#-ban a referenciatípusok (osztályok, `List<T>`) esetén — `List<int> b = a;` C#-ban is ugyanarra a listára mutat, mint `a`. A különbség csak annyi, hogy Pythonban *minden* összetett típus (list, dict, set, saját osztály) így viselkedik, míg C#-ban vannak explicit érték-típusok (`struct`, `int`, `bool`), amik másolódnak — Pythonban az `int`, `str`, `tuple` immutabilitása ad hasonló biztonságot, csak más mechanizmussal (nem másolással, hanem azzal, hogy egyáltalán nem lehet "a helyén" módosítani őket).
+
 ### List comprehension — Python egyik legjellemzőbb idiómája
+
+Ez egy olyan szintaxis, aminek nincs közvetlen megfelelője C#-ban vagy Java-ban (a LINQ hasonló *célt* szolgál, de teljesen más felépítéssel) — ezért ezt érdemes tényleg lépésről lépésre, "gépiesen" végigkövetni, nem csak elfogadni, hogy "ez egy tömör lista-építő trükk".
 
 ```python
 squares = [x**2 for x in range(10)]
-evens = [x for x in range(20) if x % 2 == 0]
-
 print(squares)
-print(evens)
 ```
 
-Miért érdemes ezt a formát választani egy hagyományos `for` ciklus + `append()` helyett? Mert a list comprehension egyetlen kifejezésben mondja ki, hogy "milyen az az új lista, amit akarok" (deklaratív stílus), szemben azzal, hogy lépésről lépésre elmondanád, *hogyan* építsd fel (imperatív stílus) — ez rövidebb, és a Python belsőleg is hatékonyabban tudja végrehajtani, mint egy explicit ciklust.
+Ahhoz, hogy pontosan lásd, mi történik, olvasd a `[kifejezés for változó in forrás]` szintaxist **jobbról balra, szó szerint**, mintha hangosan felolvasnád:
 
-**C# összehasonlítás:** ez nagyjából a LINQ `.Select()`/`.Where()` párosának felel meg, csak tömörebb szintaxissal: `numbers.Select(x => x*2).Where(x => x > 5)` ≈ `[x*2 for x in numbers if x*2 > 5]`.
+1. `for x in range(10)` — "vegyél sorban egy `x` értéket a `range(10)`-ből" (tehát 0, 1, 2, ..., 9, egyesével).
+2. `x**2` — "minden egyes ilyen `x`-re számítsd ki az `x` négyzetét".
+3. A körülötte lévő `[...]` — "az így kapott értékeket gyűjtsd össze egy új listába, a felmerülés sorrendjében".
+
+Ez **szó szerint** ugyanazt csinálja, mint az alábbi, hagyományos ciklusos verzió — a kettő 100%-ban egyenértékű, csak más a leírásmód:
+
+```python
+squares_v2 = []              # 1. üres lista létrehozása
+for x in range(10):          # 2. végigmegyünk a forráson
+    squares_v2.append(x**2)  # 3. minden elemre kiszámoljuk a kifejezést, és hozzáfűzzük
+
+print(squares_v2)            # ugyanaz, mint a squares
+print(squares == squares_v2) # True — teljesen azonos eredmény
+```
+
+Ha van benne szűrés (`if`), az a `for` és a kifejezés közé, illetve logikailag a `for`-on *belülre* kerül — pontosan úgy, mintha egy `if`-et írtál volna a ciklusmagba:
+
+```python
+evens = [x for x in range(20) if x % 2 == 0]
+print(evens)
+
+# ugyanaz ciklussal, hogy lásd az 1:1 megfeleltetést:
+evens_v2 = []
+for x in range(20):
+    if x % 2 == 0:      # a comprehension végén lévő "if x % 2 == 0" pontosan ide kerül
+        evens_v2.append(x)
+
+print(evens_v2)
+print(evens == evens_v2)   # True
+```
+
+Vagyis a list comprehension nem "varázslat", hanem egy tömör *átfogalmazása* ugyanennek a három lépésnek (üres lista → ciklus → append szűréssel), amit a Python egy sorba sűrít. Azért érdemes mégis ezt a formát preferálni (ha egyszerű az átalakítás), mert egyetlen kifejezésben mondja ki, hogy "milyen az az új lista, amit akarok" (deklaratív stílus), a hagyományos ciklus pedig lépésről lépésre elmondja, *hogyan* építsd fel (imperatív stílus) — ez rövidebb, és a Python belsőleg is hatékonyabban tudja végrehajtani, mint egy explicit `append`-es ciklust.
+
+**C# összehasonlítás:** ez nagyjából a LINQ `.Select()`/`.Where()` párosának felel meg, csak tömörebb szintaxissal: `numbers.Select(x => x*2).Where(x => x > 5)` ≈ `[x*2 for x in numbers if x*2 > 5]` — de fontos különbség, hogy a LINQ lusta (lazy) kiértékelésű, amíg nem iterálsz rajta, a list comprehension viszont *azonnal*, a sor lefutásakor létrehozza a teljes listát a memóriában.
 
 ### tuple — megváltoztathatatlan sorozat
 
@@ -360,7 +505,32 @@ x, y = point   # "tuple unpacking" — szétszedés egy lépésben
 print(f"x={x}, y={y}")
 ```
 
-Akkor használd, ha az adat **nem fog változni** (pl. egy koordináta, egy fix méretű rekord). Az immutabilitásnak gyakorlati előnye is van: egy `tuple` — a `list`-tel ellentétben — használható `dict` kulcsként vagy `set` elemként, mert ezekhez a nyelvnek garantálnia kell, hogy a kulcs/elem nem változik meg a tárolás után (különben a hash-alapú keresés inkonzisztenssé válna).
+Ez a `x, y = point` sor egy másik olyan Python-specifikus mechanizmus, aminek nincs ilyen tömör, beépített megfelelője C#-ban vagy Java-ban (ott ezt kézzel, `point.Item1`, `point.Item2` formában érnéd el). Ahhoz, hogy pontosan lásd, mi történik, gondolj rá úgy, mint egy **mintaillesztésre**: a Python a bal oldali `x, y`-t és a jobb oldali `point`-ot egymás mellé teszi, és pozíció szerint párosítja őket — az első bal oldali név kapja az első jobb oldali értéket, a második a másodikat, és így tovább. Ehhez a bal és jobb oldalon **pontosan ugyanannyi elemnek kell lennie**, különben hibát kapsz:
+
+```python
+try:
+    a, b, c = point   # point csak 2 elemű, de itt 3 nevet várunk
+except ValueError as e:
+    print(f"Hiba: {e}")   # "not enough values to unpack (expected 3, got 2)"
+```
+
+Ez a mechanizmus teszi lehetővé a híres **"csere ideiglenes változó nélkül"** trükköt is, amit a 8. fejezet buborékrendezésénél már láttál (`arr[j], arr[j+1] = arr[j+1], arr[j]`). A logika, lépésről lépésre:
+
+```python
+a = 1
+b = 2
+
+a, b = b, a   # csere ideiglenes változó nélkül
+
+print(a, b)   # 2 1
+```
+
+1. A Python **először a teljes jobb oldalt kiértékeli**, és egy ideiglenes tuple-t épít belőle: `(b, a)` → a jelen pillanatbeli értékekkel `(2, 1)`. Ez a lépés még **egyáltalán nem nyúl hozzá** a bal oldali nevekhez.
+2. Csak *ezután* történik meg a mintaillesztés: a bal oldali `a, b` nevekhez sorban hozzárendeli ennek az ideiglenes tuple-nek az elemeit — `a` kapja az első elemet (2), `b` a másodikat (1).
+
+Épp azért működik ez csere ideiglenes változó nélkül, mert a jobb oldal *teljesen* kiértékelődik, mielőtt bármelyik bal oldali név megváltozna — így nem történhet meg az a hiba, hogy `a`-t felülírod, mielőtt `b` még felhasználta volna `a` eredeti értékét (ami pont az a probléma, amit C#-ban a `temp` változóval szoktak kikerülni).
+
+Akkor használj `tuple`-t (a `list` helyett), ha az adat **nem fog változni** (pl. egy koordináta, egy fix méretű rekord). Az immutabilitásnak gyakorlati előnye is van: egy `tuple` — a `list`-tel ellentétben — használható `dict` kulcsként vagy `set` elemként, mert ezekhez a nyelvnek garantálnia kell, hogy a kulcs/elem nem változik meg a tárolás után (különben a hash-alapú keresés inkonzisztenssé válna).
 
 ### dict — kulcs-érték párok
 
@@ -451,23 +621,92 @@ Miért kell ezt explicit kijelölni? Mert a Python fordítási időben (mielőtt
 
 ### *args és **kwargs — változó számú paraméter
 
+Ez a szintaxis két irányban is működik: **összegyűjtésre** (packing) egy függvény *definíciójában*, és **szétterítésre** (unpacking) egy függvény *hívásakor*. Ha mindkét irányt végigköveted, a `*`/`**` végig ugyanazt az egy szabályt követi: *"csomagold össze/bontsd szét a paramétereket egy tuple-lé, illetve dict-té"* — csak az iránytól függ, hogy éppen összegyűjt vagy szétterít.
+
+**1. irány — összegyűjtés a definícióban:**
+
 ```python
 def summarize(*numbers):          # tetszőleges számú pozícionális paraméter
+    print(type(numbers), numbers) # mutassuk meg, MI ÉRKEZIK ténylegesen a függvénybe
     return sum(numbers)
 
-def build_config(**options):      # tetszőleges számú kulcsszavas paraméter
-    return options
-
-print(summarize(1, 2, 3, 4))                 # 10
-print(build_config(debug=True, retries=3))   # {"debug": True, "retries": 3}
+print(summarize(1, 2, 3, 4))
 ```
 
-A `*numbers` a pozícionális extra argumentumokat egy `tuple`-be gyűjti össze, a `**options` pedig a kulcsszavas extrákat egy `dict`-be — ez teszi lehetővé, hogy a függvényed anélkül fogadjon el rugalmas számú bemenetet, hogy előre fel kellene sorolnod minden lehetséges paramétert.
+Kimenet:
 
-### Rekurzió
+```
+<class 'tuple'> (1, 2, 3, 4)
+10
+```
+
+Vagyis amikor a `summarize(1, 2, 3, 4)` hívás megtörténik, a Python **nem négy külön paramétert** ad át — hanem az összes pozícionális argumentumot *előbb összegyűjti egyetlen `tuple`-be*, és ez az egy tuple lesz a `numbers` értéke a függvényen belül. Emiatt tud a `sum(numbers)` végigmenni rajta, mintha egy sima listán menne végig.
+
+Ugyanez történik a `**kwargs`-szal, csak `dict`-be gyűjtve, a kulcsszó=érték párokat:
 
 ```python
-def factorial(n: int) -> int:
+def build_config(**options):
+    print(type(options), options)
+    return options
+
+print(build_config(debug=True, retries=3))
+```
+
+Kimenet:
+
+```
+<class 'dict'> {'debug': True, 'retries': 3}
+{'debug': True, 'retries': 3}
+```
+
+**2. irány — szétterítés a hívásnál:** ugyanez a `*`/`**` fordítva is használható, amikor *neked* van egy kész listád/szótáradad, és azt akarod, hogy a függvény úgy kapja meg, mintha külön-külön argumentumként írtad volna ki:
+
+```python
+values = [1, 2, 3, 4]
+print(summarize(*values))       # ugyanaz, mintha summarize(1, 2, 3, 4)-et írtál volna
+
+config_data = {"debug": True, "retries": 3}
+print(build_config(**config_data))   # ugyanaz, mintha build_config(debug=True, retries=3)-at írtál volna
+```
+
+Ez a szétterítés pontosan az, amit már láttál a 14. fejezetben az `Issue(**item)` sornál: az `item` egy `dict`, a `**` szétbontja kulcs=érték párokra, és úgy adja át, mintha kézzel kiírtad volna mindegyiket — csak fordítva sül el, mint a `def build_config(**options)`-nál: ott a függvény *gyűjti össze* a bejövő argumentumokat egy dict-be, itt a hívó *szór szét* egy meglévő dict-et argumentumokra. Ugyanaz a jel (`**`), pontosan ellentétes irányban használva.
+
+### A "mutable default argument" csapda — a leghírhedtebb Python-specifikus buta hiba
+
+Ez egy olyan viselkedés, aminek a *gyökere* Python-specifikus (abból fakad, hogy a default érték csak **egyszer**, a függvény definiálásakor jön létre, nem minden híváskor újra), és szinte minden kezdőt megfog egyszer. Nézd meg ezt a — látszólag ártatlan — kódot:
+
+```python
+def add_issue(title: str, issues: list = []):   # ⚠️ ÍGY NE!
+    issues.append(title)
+    return issues
+
+result1 = add_issue("Bug A")
+print(result1)   # ["Bug A"] — eddig oké
+
+result2 = add_issue("Bug B")
+print(result2)   # ["Bug A", "Bug B"]  ⚠️ VÁRATLAN! Nem ["Bug B"]-t kaptunk!
+```
+
+Miért ragadt bent a "Bug A" a második hívásnál, amikor `issues`-t egyszer sem adtuk át kívülről? A magyarázat a végrehajtás időzítésében rejlik:
+
+1. A `def add_issue(title, issues=[]):` sor **csak egyszer fut le** — akkor, amikor a Python beolvassa (definiálja) a függvényt, nem minden egyes híváskor. Ekkor létrejön **egyetlen darab** üres lista-objektum a memóriában, ami a `issues` paraméter alapértelmezett értékeként lesz eltárolva a függvény-objektumon belül.
+2. Amikor `add_issue("Bug A")`-t hívod *default érték nélkül* (nem adsz meg `issues`-t), a Python **ugyanazt az egyetlen, 1. lépésben létrehozott lista-objektumot** használja — nem hoz létre minden híváshoz egy friss, üres listát.
+3. Az `issues.append(title)` ezt a megosztott listát módosítja a helyén (emlékezz a referencia-szemantikára fentebb) — tehát a módosítás **megmarad** a következő hívásra is, mert ugyanaz a doboz.
+
+A helyes megoldás: soha ne használj mutable (módosítható) típust — `list`, `dict`, `set` — default értékként. Helyette `None`-t adj meg, és a függvény *belsejében* hozz létre friss listát, ha szükséges:
+
+```python
+def add_issue_fixed(title: str, issues: list | None = None):
+    if issues is None:
+        issues = []          # minden híváskor ÚJ, friss listát hoz létre, ha nem kaptunk sajátot
+    issues.append(title)
+    return issues
+
+print(add_issue_fixed("Bug A"))   # ["Bug A"]
+print(add_issue_fixed("Bug B"))   # ["Bug B"]  — most helyesen, nem ragad össze semmi
+```
+
+**C# összehasonlítás:** C#-ban ez a probléma szerkezetileg nem tud előfordulni, mert ott egy metódus paraméter-alapértéke (`List<string> issues = null`) minden híváskor "friss" kiértékelést kap a fordító szintjén, nincs olyan fogalom, hogy egy default objektum a metódus *létrehozásakor* egyszer példányosodik és utána megosztva újrafelhasználódik.
     if n <= 1:
         return 1
     return n * factorial(n - 1)

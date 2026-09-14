@@ -15,24 +15,26 @@ A C++ egyik legnagyobb különbsége minden eddig tanult nyelvhez képest (Pytho
 
 ## Tartalomjegyzék
 
-1. [Mi a C++, és hogyan fordul le / fut le egy program](#1-mi-a-c-és-hogyan-fordul-le--fut-le-egy-program)
-2. [Alaptípusok, változók, operátorok](#2-alaptípusok-változók-operátorok)
-3. [Vezérlési szerkezetek](#3-vezérlési-szerkezetek)
-4. [Sztringkezelés](#4-sztringkezelés)
-5. [Standard I/O](#5-standard-io)
-6. [Adatszerkezetek: tömb, vector, map, set, pair](#6-adatszerkezetek-tömb-vector-map-set-pair)
-7. [Függvények (alprogramok)](#7-függvények-alprogramok)
-8. [Algoritmikus gondolkodás és alapalgoritmusok](#8-algoritmikus-gondolkodás-és-alapalgoritmusok)
-9. [Hibakezelés](#9-hibakezelés)
-10. [Mutatók és referenciák](#10-mutatók-és-referenciák)
-11. [Memóriakezelés: stack, heap, RAII, smart pointerek](#11-memóriakezelés-stack-heap-raii-smart-pointerek)
-12. [Objektumorientált programozás](#12-objektumorientált-programozás)
-13. [Fordítási modell: header fájlok, namespace, linkelés](#13-fordítási-modell-header-fájlok-namespace-linkelés)
-14. [Template-ek (generikus programozás)](#14-template-ek-generikus-programozás)
-15. [Move szemantika (modern C++)](#15-move-szemantika-modern-c)
-16. [Gyakorlati integráció: fájlfeldolgozás a nulláról](#16-gyakorlati-integráció-fájlfeldolgozás-a-nulláról)
-17. [Automatizált tesztelés: Google Test](#17-automatizált-tesztelés-google-test)
-18. [Megfelelési táblázat a hivatalos tematikához](#18-megfelelési-táblázat-a-hivatalos-tematikához)
+- [[#1. Mi a C++, és hogyan fordul le / fut le egy program|1. Mi a C++, és hogyan fordul le / fut le egy program]]
+- [[#2. Alaptípusok, változók, operátorok|2. Alaptípusok, változók, operátorok]]
+- [[#3. Vezérlési szerkezetek|3. Vezérlési szerkezetek]]
+- [[#4. Sztringkezelés|4. Sztringkezelés]]
+- [[#5. Standard I/O|5. Standard I/O]]
+- [[#6. Adatszerkezetek: tömb, vector, map, set, pair|6. Adatszerkezetek: tömb, vector, map, set, pair]]
+- [[#7. Függvények (alprogramok)|7. Függvények (alprogramok)]]
+- [[#8. Algoritmikus gondolkodás és alapalgoritmusok|8. Algoritmikus gondolkodás és alapalgoritmusok]]
+- [[#9. Hibakezelés|9. Hibakezelés]]
+- [[#10. Mutatók és referenciák|10. Mutatók és referenciák]]
+- [[#11. Memóriakezelés: stack, heap, RAII, smart pointerek|11. Memóriakezelés: stack, heap, RAII, smart pointerek]]
+- [[#12. Objektumorientált programozás|12. Objektumorientált programozás]]
+- [[#13. Fordítási modell: header fájlok, namespace, linkelés|13. Fordítási modell: header fájlok, namespace, linkelés]]
+- [[#14. Template-ek (generikus programozás)|14. Template-ek (generikus programozás)]]
+- [[#15. Move szemantika (modern C++)|15. Move szemantika (modern C++)]]
+- [[#16. Gyakorlati integráció: fájlfeldolgozás a nulláról|16. Gyakorlati integráció: fájlfeldolgozás a nulláról]]
+- [[#17. Automatizált tesztelés: Google Test|17. Automatizált tesztelés: Google Test]]
+- [[#18. Megfelelési táblázat a hivatalos tematikához|18. Megfelelési táblázat a hivatalos tematikához]]
+
+
 
 ---
 
