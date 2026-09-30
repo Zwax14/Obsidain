@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
-                "mode": "source",
+                "file": "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python_referencia_konyv"
+              "title": "set_theory_zh_prep"
             }
           }
         ]
@@ -211,7 +211,11 @@
   },
   "active": "585e4ec417ccf459",
   "lastOpenFiles": [
+    "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
+    "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep (1).md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
+    "Egyetem/Matek/Gyakorlo tesztek",
+    "Egyetem/Matek/New folder",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "conflict-files-obsidian-git.md",
     "Egyetem/Bevezetes a programozasba/teszt_link.md",
@@ -237,9 +241,7 @@
     "Egyetem/Matek",
     "Egyetem/PDF",
     "Egyetem/Bevezetes a programozasba",
-    "Egyetem",
     "Comics/Spider-Man Deadpool 2016.md",
-    "Comics",
     "Bev Programozas/python_frissito_terv.md",
     "Bev Programozas/python_referencia_konyv.md",
     "Welcome.md"
