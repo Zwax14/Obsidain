@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Egyetem/Bevezetes a programozasba/Rust_Alapok.md",
+                "file": "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rust_Alapok"
+              "title": "rust_referenciakonyv"
             }
           }
         ]
@@ -218,6 +218,8 @@
   },
   "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
+    "Egyetem/Bevezetes a programozasba/Rust_Alapok.md",
+    "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
     "bevprog.canvas",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "y.md",
@@ -232,7 +234,6 @@
     "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
     "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
-    "Egyetem/Bevezetes a programozasba/Rust_Alapok.md",
     "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek",
     "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
