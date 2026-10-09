@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -218,8 +218,11 @@
   },
   "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
-    "Egyetem/Bevezetes a programozasba/Rust_Alapok.md",
+    "Egyetem/Bevezetes a programozasba/java_reference.md",
+    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
+    "Egyetem/Bevezetes a programozasba/Rust_Alapok.md",
+    "Egyetem/Bevezetes a programozasba/rust_referenciakonyv (1).md",
     "bevprog.canvas",
     "Sablonok/Templater_gyakorlas_sablon.md",
     "y.md",
@@ -228,8 +231,6 @@
     "2026-10-09.md",
     "Comics/Spider-Man Deadpool 2016.md",
     "conflict-files-obsidian-git.md",
-    "Egyetem/Bevezetes a programozasba/java_reference.md",
-    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Egyetem/Matek/Gyakorlo tesztek/complex_numbers_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
     "Egyetem/Logika/logic_foundations_zh_prep.md",
@@ -254,7 +255,6 @@
     "Sablonok/Képregény Sablon.md",
     "Képregény Tracker.md",
     "Python referencia könyv.md",
-    "Welcome.md",
     "Egyetem/PDF",
     "Egyetem/Logika",
     "Egyetem/Op Rendszserek",
