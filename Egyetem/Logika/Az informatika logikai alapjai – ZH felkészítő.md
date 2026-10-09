@@ -441,9 +441,13 @@ Van 1 → kielégíthető (pl. X=1, Y=0). Van 0 → **nem** érvényes (X=0, Y=1
 - X=0, Y=1 mellett: X ⊃ (Y ⊃ X) = 0 ⊃ (…) = **1**; ¬(Y ⊃ X) ∧ (X ∨ ¬Y) = ¬(1 ⊃ 0) ∧ (0 ∨ 0) = 1 ∧ 0 = **0**; ((¬X ⊃ Y) ⊃ X) ⊃ ¬Y = ((1 ⊃ 1) ⊃ 0) ⊃ 0 = (1 ⊃ 0) ⊃ 0 = 0 ⊃ 0 = **1**.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Csavaros kérdés (5.I.9, 5.I.10): mit tudunk részinformációból?**
 =======
 **Csünya kérdés (5.I.9, 5.I.10): mit tudunk részinformációból?**
+>>>>>>> origin/main
+=======
+**Csavaros kérdés (5.I.9, 5.I.10): mit tudunk részinformációból?**
 >>>>>>> origin/main
 
 - ¬X ⊃ (¬Y ∧ X) ∨ Z, ha Z=1: a jobb oldal ( ∨ Z) biztosan 1 → az egész ⊃ **igaz**.
@@ -575,6 +579,9 @@ Ha egy formulát „ki kell mondani”: kívülről befelé olvass, a kvantoroka
 
 **Recept:** 1) határozd meg a fő kvantort a mondat elejéről („Mindenki…” → ∀x). 2) a „végző” rész („szeret valakit”) → ∃y szeret(x,y). 3) a „senki” = ¬∃, a „nem mindenki” = ¬∀. 4) Írd vissza magyarra, hogy ellenőrizd.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
 
 ## 5. Szemantikai alapfogalmak: modell, kielégíthetőség, érvényesség
 
@@ -1197,5 +1204,8 @@ A ZH-n sokszor szó szerint is kérik a definíciót. Tanuld meg a **bal oszlop 
 2. Oldj meg **kettőt** minden feladattípusból a 9. fejezet mintájára, megoldás nélkül.
 3. A bizonyításoknál mindig a **sablon**: indirekt → modell → ellentmondás.
 4. Ha elakadsz egy formulán: rajzold fel a szerkezeti fát, és menj belülről kifelé.
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
 =======
 >>>>>>> origin/main
