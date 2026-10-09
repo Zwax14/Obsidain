@@ -440,7 +440,11 @@ Van 1 → kielégíthető (pl. X=1, Y=0). Van 0 → **nem** érvényes (X=0, Y=1
 - ugyanez, ha X=0, Y=0, Z=1: (0 ∨ 1) = 1, 1 ⊃ 1 = **1**.
 - X=0, Y=1 mellett: X ⊃ (Y ⊃ X) = 0 ⊃ (…) = **1**; ¬(Y ⊃ X) ∧ (X ∨ ¬Y) = ¬(1 ⊃ 0) ∧ (0 ∨ 0) = 1 ∧ 0 = **0**; ((¬X ⊃ Y) ⊃ X) ⊃ ¬Y = ((1 ⊃ 1) ⊃ 0) ⊃ 0 = (1 ⊃ 0) ⊃ 0 = 0 ⊃ 0 = **1**.
 
+<<<<<<< HEAD
 **Csavaros kérdés (5.I.9, 5.I.10): mit tudunk részinformációból?**
+=======
+**Csünya kérdés (5.I.9, 5.I.10): mit tudunk részinformációból?**
+>>>>>>> origin/main
 
 - ¬X ⊃ (¬Y ∧ X) ∨ Z, ha Z=1: a jobb oldal ( ∨ Z) biztosan 1 → az egész ⊃ **igaz**.
 - (X ⊃ Y) ⊃ (¬Y ⊃ ¬X), ha Y=1: ¬Y = 0, ezért ¬Y ⊃ ¬X = 1 → az egész **igaz**.
@@ -570,6 +574,7 @@ Ha egy formulát „ki kell mondani”: kívülről befelé olvass, a kvantoroka
 | Van, akit senki sem szeret. | ∃y∀x ¬szeret(x,y) |
 
 **Recept:** 1) határozd meg a fő kvantort a mondat elejéről („Mindenki…” → ∀x). 2) a „végző” rész („szeret valakit”) → ∃y szeret(x,y). 3) a „senki” = ¬∃, a „nem mindenki” = ¬∀. 4) Írd vissza magyarra, hogy ellenőrizd.
+<<<<<<< HEAD
 
 ## 5. Szemantikai alapfogalmak: modell, kielégíthetőség, érvényesség
 
@@ -1192,3 +1197,5 @@ A ZH-n sokszor szó szerint is kérik a definíciót. Tanuld meg a **bal oszlop 
 2. Oldj meg **kettőt** minden feladattípusból a 9. fejezet mintájára, megoldás nélkül.
 3. A bizonyításoknál mindig a **sablon**: indirekt → modell → ellentmondás.
 4. Ha elakadsz egy formulán: rajzold fel a szerkezeti fát, és menj belülről kifelé.
+=======
+>>>>>>> origin/main

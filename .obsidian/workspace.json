@@ -20,8 +20,65 @@
               "icon": "lucide-file",
               "title": "Az informatika logikai alapjai – ZH felkészítő"
             }
+          },
+          {
+            "id": "9225a3f4620e7140",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Az informatika logikai alapjai – ZH felkészítő"
+            }
+          },
+          {
+            "id": "27c224bf16fd16ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Egyetem/Bevezetes a programozasba/c_reference.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "c_reference"
+            }
+          },
+          {
+            "id": "9090e841152524ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Egyetem/Bevezetes a programozasba/java_reference.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "java_reference"
+            }
+          },
+          {
+            "id": "22a294e9e6b3f0ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -216,18 +273,19 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "44ea68e98ca6d584",
+  "active": "22a294e9e6b3f0ca",
   "lastOpenFiles": [
-    "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
-    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
-    "Comics/Spider-Man Deadpool 2016.md",
-    "conflict-files-obsidian-git.md",
-    "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
-    "Egyetem/Matek/Gyakorlo tesztek",
     "Egyetem/Bevezetes a programozasba/java_reference.md",
-    "Egyetem/Bevezetes a programozasba/c_reference.md",
-    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
+    "conflict-files-obsidian-git.md",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
+    "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
+    "Egyetem/Bevezetes a programozasba/Rust_Alapok.md",
+    "Egyetem/Bevezetes a programozasba/c_reference.md",
+    "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
+    "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
+    "Comics/Spider-Man Deadpool 2016.md",
+    "Egyetem/Matek/Gyakorlo tesztek",
+    "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
     "Egyetem/PDF/Feladatsor_2026.pdf",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
