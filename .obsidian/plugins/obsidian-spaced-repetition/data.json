@@ -80,15 +80,7 @@
     "preferredDateFormatForNoteReviewQueue": "MMM DD YYYY",
     "preferredLocale": "-"
   },
-<<<<<<< HEAD
   "buryDate": "2026-10-13",
-=======
-<<<<<<< HEAD
-  "buryDate": "2026-10-09",
-=======
-  "buryDate": "2026-10-08",
->>>>>>> origin/main
->>>>>>> origin/main
   "buryList": [],
   "historyDeck": null,
   "scheduleData": {
