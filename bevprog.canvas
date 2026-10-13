@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"0081769c195d59e0","x":1482,"y":-252,"width":400,"height":400,"type":"file","file":"Egyetem/Bevezetes a programozasba/Rust_Alapok.md"},
+		{"id":"ff7b60932cec8656","x":-300,"y":-200,"width":400,"height":400,"type":"file","file":"Egyetem/Bevezetes a programozasba/c_reference.md"},
+		{"id":"5dfe0c986e039a34","x":590,"y":-200,"width":400,"height":400,"type":"file","file":"Egyetem/Bevezetes a programozasba/java_reference.md"},
+		{"id":"9161b8ad8fac17f1","x":1035,"y":-200,"width":400,"height":400,"type":"file","file":"Egyetem/Bevezetes a programozasba/python_referencia_konyv.md"},
+		{"id":"1cef17d69f652052","x":145,"y":-200,"width":400,"height":400,"type":"file","file":"Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md"}
+	],
+	"edges":[]
+}
