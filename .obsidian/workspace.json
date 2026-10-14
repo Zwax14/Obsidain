@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "479030ed2bd035e9",
@@ -209,7 +210,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "585e4ec417ccf459",
+  "active": "388357c023dbbe88",
   "lastOpenFiles": [
     "Egyetem/SZMV/computer_math_geogebra_zh_prep.md",
     "Egyetem/Logika/logic_foundations_zh_prep.md",
