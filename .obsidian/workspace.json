@@ -11,16 +11,14 @@
             "id": "388357c023dbbe88",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Egyetem/Logika/LT/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
-                "page": 2,
-                "left": -8,
-                "top": 786,
-                "zoom": 1.9180427546664907
+                "file": "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Logika – 2. lecke Jelek → mondat, zárójelek"
+              "icon": "lucide-file",
+              "title": "number_theory_divisibility_zh_prep"
             }
           }
         ]
@@ -213,10 +211,13 @@
   },
   "active": "388357c023dbbe88",
   "lastOpenFiles": [
+    "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
+    "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
+    "Egyetem/Matek/Gyakorlo tesztek/complex_numbers_zh_prep.md",
+    "Egyetem/Logika/LT/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
     "Egyetem/Logika/LT/Logika – 3. lecke Szerkezeti fák.pdf",
     "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
     "Egyetem/Logika/LT/Logika – 4. lecke Igazságtábla.pdf",
-    "Egyetem/Logika/LT/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
     "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/Logika/Lt/Logika – 4. lecke Igazságtábla.pdf",
     "Egyetem/Logika/Lt/Logika – 3. lecke Szerkezeti fák.pdf",
@@ -231,9 +232,6 @@
     "Egyetem/SZMV",
     "bevprog.canvas",
     "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
-    "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
-    "Egyetem/Matek/Gyakorlo tesztek/complex_numbers_zh_prep.md",
-    "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/Diszkrét matematika – Oszthatóság ZH felkészítő.md",
     "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő (1).md",
     "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep (1).md",
