@@ -190,6 +190,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
@@ -199,21 +206,14 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "388357c023dbbe88",
+  "active": "585e4ec417ccf459",
   "lastOpenFiles": [
+    "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Edzesterv.xlsx",
     "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
-    "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/SZMV/computer_math_geogebra_zh_prep 1.md",
     "Egyetem/SZMV/computer_math_geogebra_zh_prep.md",
     "conflict-files-obsidian-git.md",
@@ -251,7 +251,6 @@
     "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
     "Egyetem/Matek/assets",
-    "Egyetem/PDF/Feladatsor_2026.pdf",
-    "Egyetem/PDF/DiMat_ea.pdf"
+    "Egyetem/PDF/Feladatsor_2026.pdf"
   ]
 }
