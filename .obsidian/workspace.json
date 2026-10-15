@@ -11,14 +11,16 @@
             "id": "388357c023dbbe88",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
-                "mode": "preview",
-                "source": false
+                "file": "Egyetem/Logika/LT/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
+                "page": 2,
+                "left": -8,
+                "top": 786,
+                "zoom": 1.9180427546664907
               },
-              "icon": "lucide-file",
-              "title": "Az informatika logikai alapjai – ZH felkészítő"
+              "icon": "lucide-file-text",
+              "title": "Logika – 2. lecke Jelek → mondat, zárójelek"
             }
           }
         ]
@@ -209,9 +211,12 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "585e4ec417ccf459",
+  "active": "388357c023dbbe88",
   "lastOpenFiles": [
+    "Egyetem/Logika/LT/Logika – 3. lecke Szerkezeti fák.pdf",
     "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
+    "Egyetem/Logika/LT/Logika – 4. lecke Igazságtábla.pdf",
+    "Egyetem/Logika/LT/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
     "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/Logika/Lt/Logika – 4. lecke Igazságtábla.pdf",
     "Egyetem/Logika/Lt/Logika – 3. lecke Szerkezeti fák.pdf",
@@ -224,7 +229,6 @@
     "conflict-files-obsidian-git.md",
     "Egyetem/computer_math_geogebra_zh_prep.md",
     "Egyetem/SZMV",
-    "Egyetem/New folder",
     "bevprog.canvas",
     "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
     "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
@@ -232,10 +236,8 @@
     "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/Diszkrét matematika – Oszthatóság ZH felkészítő.md",
     "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő (1).md",
-    "Egyetem/Logika",
     "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep (1).md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
-    "Egyetem/Matek/Gyakorlo tesztek",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/teszt_link.md",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv (1).md",
