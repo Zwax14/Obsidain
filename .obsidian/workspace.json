@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
-                "mode": "source",
+                "file": "Egyetem/SZMV/computer_math_geogebra_zh_prep 1.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "number_theory_divisibility_zh_prep"
+              "title": "computer_math_geogebra_zh_prep 1"
             }
           }
         ]
@@ -209,8 +209,9 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "585e4ec417ccf459",
+  "active": "388357c023dbbe88",
   "lastOpenFiles": [
+    "Egyetem/SZMV/computer_math_geogebra_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/complex_numbers_zh_prep.md",
@@ -226,7 +227,6 @@
     "Egyetem/Logika/Lt",
     "Edzesterv.xlsx",
     "Egyetem/SZMV/computer_math_geogebra_zh_prep 1.md",
-    "Egyetem/SZMV/computer_math_geogebra_zh_prep.md",
     "conflict-files-obsidian-git.md",
     "Egyetem/computer_math_geogebra_zh_prep.md",
     "Egyetem/SZMV",
