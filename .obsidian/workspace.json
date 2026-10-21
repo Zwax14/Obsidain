@@ -11,14 +11,16 @@
             "id": "0f1b428b380c7fdf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
-                "mode": "preview",
-                "source": false
+                "file": "Egyetem/Logika/Lt/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
+                "page": 1,
+                "left": -20,
+                "top": 843,
+                "zoom": 0.7891160152072766
               },
-              "icon": "lucide-file",
-              "title": "rust_referenciakonyv"
+              "icon": "lucide-file-text",
+              "title": "Logika – 2. lecke Jelek → mondat, zárójelek"
             }
           }
         ]
@@ -216,7 +218,7 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "44ea68e98ca6d584",
+  "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
     "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
     "conflict-files-obsidian-git.md",
