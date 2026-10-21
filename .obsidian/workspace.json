@@ -11,16 +11,14 @@
             "id": "0f1b428b380c7fdf",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Egyetem/Logika/Lt/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
-                "page": 1,
-                "left": -20,
-                "top": 843,
-                "zoom": 0.7891160152072766
+                "file": "Egyetem/Matek/Gyakorlo tesztek/complex_numbers_zh_prep.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Logika – 2. lecke Jelek → mondat, zárójelek"
+              "icon": "lucide-file",
+              "title": "complex_numbers_zh_prep"
             }
           }
         ]
@@ -220,6 +218,7 @@
   },
   "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
+    "Egyetem/Logika/Lt/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
     "Egyetem/Bevezetes a programozasba/rust_referenciakonyv.md",
     "conflict-files-obsidian-git.md",
     "Egyetem/SZMV/computer_math_geogebra_zh_prep.md",
@@ -227,7 +226,6 @@
     "Egyetem/SZMV",
     "Egyetem/Logika/Lt/Logika – 4. lecke Igazságtábla.pdf",
     "Egyetem/Logika/Lt/Logika – 3. lecke Szerkezeti fák.pdf",
-    "Egyetem/Logika/Lt/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
     "Egyetem/Logika/Lt",
     "Egyetem/Bevezetes a programozasba/java_reference.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
@@ -260,7 +258,6 @@
     "Egyetem/Matek/assets/01_bevezeto_masodfoku.png",
     "Egyetem/Matek/assets",
     "Egyetem/PDF/DiMat_ea.pdf",
-    "Egyetem/PDF/OP_system_conepts_essentials.pdf",
-    "Sablonok/Képregény Sablon.md"
+    "Egyetem/PDF/OP_system_conepts_essentials.pdf"
   ]
 }
