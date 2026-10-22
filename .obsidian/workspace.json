@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
+                "file": "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "number_theory_divisibility_zh_prep"
+              "title": "set_theory_zh_prep"
             }
           }
         ]
@@ -216,14 +216,14 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "44ea68e98ca6d584",
+  "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
+    "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
     "Egyetem/Logika/Lt/Logika – Törvény, kielégíthető, ellentmondás (1.14).pdf",
     "Egyetem/Logika/Lt/Logika – Logikai következmény (1.12).pdf",
     "Egyetem/Logika/Lt/Logika – Implikáció csak akkor, akkor, feltéve, hogy, kivéve, ha.pdf",
     "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
     "Egyetem/Logika/Lt/Logika – 3. ZH-feladat, tanári feladatlap, 1.11 (a–h).pdf",
-    "Egyetem/Matek/Gyakorlo tesztek/number_theory_divisibility_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
     "Egyetem/Matek/Gyakorlo tesztek/complex_numbers_zh_prep.md",
     "Egyetem/Logika/Lt/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
@@ -248,7 +248,6 @@
     "Comics/Spider-Man Deadpool 2016.md",
     "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
-    "Egyetem/Matek/Gyakorlo tesztek",
     "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
