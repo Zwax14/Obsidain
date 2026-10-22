@@ -15,9 +15,9 @@
               "state": {
                 "file": "Egyetem/Logika/Lt/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
                 "page": 1,
-                "left": -11,
-                "top": 312,
-                "zoom": 1.4334978330479875
+                "left": -10,
+                "top": 258,
+                "zoom": 1.5039770943743154
               },
               "icon": "lucide-file-text",
               "title": "Logika – 2. lecke Jelek → mondat, zárójelek"
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 245.5
   },
   "right": {
     "id": "5f1a29e1f246a065",
