@@ -13,14 +13,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
+                "file": "Egyetem/Logika/Lt/Logika – Implikáció csak akkor, akkor, feltéve, hogy, kivéve, ha.pdf",
                 "page": 1,
                 "left": -10,
                 "top": 843,
-                "zoom": 1.5039770943743151
+                "zoom": 1.4309807165720472
               },
               "icon": "lucide-file-text",
-              "title": "Logika – Formulahalmazok (1.15–1.16)"
+              "title": "Logika – Implikáció csak akkor, akkor, feltéve, hogy, kivéve, ha"
             }
           }
         ]
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 303.1000061035156
   },
   "right": {
     "id": "5f1a29e1f246a065",
@@ -220,11 +220,11 @@
   },
   "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
+    "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
     "Egyetem/Logika/Lt/Logika – 4. lecke Igazságtábla.pdf",
     "Egyetem/Logika/Lt/Logika – 3. ZH-feladat, tanári feladatlap, 1.11 (a–h).pdf",
     "Egyetem/Logika/Lt/Logika – 3. lecke Szerkezeti fák.pdf",
     "Egyetem/Logika/Lt/Logika – 2. lecke Jelek → mondat, zárójelek.pdf",
-    "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
     "Egyetem/Logika/Lt/Logika – Logikai következmény (1.12).pdf",
     "Egyetem/Logika/Lt/Logika – Törvény, kielégíthető, ellentmondás (1.14).pdf",
     "Egyetem/Matek/Gyakorlo tesztek/complex_numbers_zh_prep.md",
