@@ -11,16 +11,14 @@
             "id": "0f1b428b380c7fdf",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Egyetem/Logika/Lt/Logika – Törvény, kielégíthető, ellentmondás (1.14).pdf",
-                "page": 4,
-                "left": -19,
-                "top": 760,
-                "zoom": 0.7916331316832169
+                "file": "Egyetem/Logika/logic_practice_6_zh_prep.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Logika – Törvény, kielégíthető, ellentmondás (1.14)"
+              "icon": "lucide-file",
+              "title": "logic_practice_6_zh_prep"
             }
           }
         ]
@@ -218,9 +216,12 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "44ea68e98ca6d584",
+  "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
     "Egyetem/Logika/Lt/Logika – Törvény, kielégíthető, ellentmondás (1.14).pdf",
+    "Egyetem/Logika/logic_practice_6_zh_prep.md",
+    "Egyetem/Logika/ZH 5 es 6 lefadatsor",
+    "Egyetem/Logika/New folder",
     "Egyetem/Logika/Lt/Logika – Logikai következmény (1.12).pdf",
     "Egyetem/Logika/Lt/Logika – Implikáció csak akkor, akkor, feltéve, hogy, kivéve, ha.pdf",
     "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
@@ -235,8 +236,6 @@
     "conflict-files-obsidian-git.md",
     "Egyetem/SZMV/computer_math_geogebra_zh_prep.md",
     "Egyetem/SZMV/computer_math_geogebra_zh_prep 1.md",
-    "Egyetem/SZMV",
-    "Egyetem/Logika/Lt",
     "Egyetem/Bevezetes a programozasba/java_reference.md",
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv.md",
     "Egyetem/Bevezetes a programozasba/Rust_Alapok.md",
@@ -255,7 +254,6 @@
     "Egyetem/Bevezetes a programozasba/python_referencia_konyv (1).md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet (1).md",
     "Egyetem/Matek/Diszkr├⌐t matematika - Elm├⌐let.md",
-    "Egyetem/Matek/Diszkr├⌐t matematika - Feladatsor.md",
     "Egyetem/Matek/assets/05_injektiv_szurjektiv_bijektiv.png",
     "Egyetem/Matek/assets/04_trig_abs_sgn_id.png",
     "Egyetem/Matek/assets/03_exp_log.png",
