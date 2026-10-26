@@ -33,22 +33,22 @@ source: gyak06_2026-Szilvitol-4per3-javitott.pdf
 > 3. A részeket **külön fordítsd le**, aztán rakd össze.
 > 4. **Írd vissza magyarra** ellenőrzésnek.
 
-| Magyarul | Formula |
-| --- | --- |
-| nem, nincs | ¬A |
-| és, de, pedig, is | A ∧ B |
-| vagy | A ∨ B |
-| ha A, akkor B | A ⊃ B |
-| **csak akkor A, ha B** | **A ⊃ B** (az „A" az, ami után a „csak akkor" áll!) |
-| A akkor és csak akkor, ha B; pontosan akkor | A ≡ B |
-| nem fordulhat elő, hogy A és B | ¬(A ∧ B) |
-| sem A, sem B | ¬A ∧ ¬B |
-| A, **kivéve ha** B | ¬B ⊃ A (ha nem B, akkor A) |
-| föltéve, hogy B | a feltételhez hozzáadsz egy „∧ B"-t |
-| minden A B | ∀x(A(x) ⊃ B(x)) |
-| van olyan A, ami B | ∃x(A(x) ∧ B(x)) |
-| egyetlen A sem B | ¬∃x(A(x) ∧ B(x)) ⇔ ∀x(A(x) ⊃ ¬B(x)) |
-| nem minden A B | ¬∀x(A(x) ⊃ B(x)) ⇔ ∃x(A(x) ∧ ¬B(x)) |
+| Magyarul                                    | Formula                                             |
+| ------------------------------------------- | --------------------------------------------------- |
+| nem, nincs                                  | ¬A                                                  |
+| és, de, pedig, is                           | A ∧ B                                               |
+| vagy                                        | A ∨ B                                               |
+| ha A, akkor B                               | A ⊃ B                                               |
+| **csak akkor A, ha B**                      | **A ⊃ B** (az „A" az, ami után a „csak akkor" áll!) |
+| A akkor és csak akkor, ha B; pontosan akkor | A ≡ B                                               |
+| nem fordulhat elő, hogy A és B              | ¬(A ∧ B)                                            |
+| sem A, sem B                                | ¬A ∧ ¬B                                             |
+| A, **kivéve ha** B                          | ¬B ⊃ A (ha nem B, akkor A)                          |
+| föltéve, hogy B                             | a feltételhez hozzáadsz egy „∧ B"-t                 |
+| minden A B                                  | ∀x(A(x) ⊃ B(x))                                     |
+| van olyan A, ami B                          | ∃x(A(x) ∧ B(x))                                     |
+| egyetlen A sem B                            | ¬∃x(A(x) ∧ B(x)) ⇔ ∀x(A(x) ⊃ ¬B(x))                 |
+| nem minden A B                              | ¬∀x(A(x) ⊃ B(x)) ⇔ ∃x(A(x) ∧ ¬B(x))                 |
 
 > [!warning] A három legnagyobb csapda
 > 1. **„Csak akkor A, ha B"** = A ⊃ B. Nem fordítva! („Csak akkor megyünk kirándulni, ha jó az idő": K ⊃ J.)
