@@ -11,16 +11,14 @@
             "id": "0f1b428b380c7fdf",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
-                "page": 4,
-                "left": -13,
-                "top": 141,
-                "zoom": 1.127668181221244
+                "file": "Egyetem/Logika/logic_practice_6_zh_prep.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Logika – Formulahalmazok (1.15–1.16)"
+              "icon": "lucide-file",
+              "title": "logic_practice_6_zh_prep"
             }
           }
         ]
@@ -220,13 +218,14 @@
   },
   "active": "0f1b428b380c7fdf",
   "lastOpenFiles": [
+    "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/Logika/Lt/Logika – Törvény, kielégíthető, ellentmondás (1.14).pdf",
+    "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
     "Egyetem/Logika/logic_practice_6_zh_prep.md",
     "Egyetem/Logika/ZH 5 es 6 lefadatsor",
     "Egyetem/Logika/New folder",
     "Egyetem/Logika/Lt/Logika – Logikai következmény (1.12).pdf",
     "Egyetem/Logika/Lt/Logika – Implikáció csak akkor, akkor, feltéve, hogy, kivéve, ha.pdf",
-    "Egyetem/Logika/Lt/Logika – Formulahalmazok (1.15–1.16).pdf",
     "Egyetem/Logika/Lt/Logika – 4. lecke Igazságtábla.pdf",
     "Egyetem/Logika/Lt/Logika – 3. ZH-feladat, tanári feladatlap, 1.11 (a–h).pdf",
     "Egyetem/Logika/Lt/Logika – 3. lecke Szerkezeti fák.pdf",
@@ -249,7 +248,6 @@
     "Egyetem/Logika/Az informatika logikai alapjai – ZH felkészítő.md",
     "2026-10-09.md",
     "Comics/Spider-Man Deadpool 2016.md",
-    "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/Bevezetes a programozasba/cpp_referencia_konyv.md",
     "Egyetem/Matek/Diszkrét matematika - Feladatsor.md",
     "Egyetem/Matek/Diszkrét matematika - Elmélet.md",
