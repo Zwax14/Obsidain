@@ -10,7 +10,7 @@ type: study-note
 status: to-review
 source: gyak06_2026-Szilvitol-4per3-javitott.pdf
 ---
-
+ 
 # 🧠 Logika – 6. gyakorlat (ZH előtt) megoldva
 
 > [!abstract] Hogyan használd?
