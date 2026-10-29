@@ -458,10 +458,10 @@ Az $f(x)=x^2$ csúcsa: $(0,0)$.
 
 A $g(x)=(x-\textcolor{red}{1})^2+\textcolor{blue}{1}$ alakban:
 
-| Hol áll | Mi az | Mit csinál |
-| --- | --- | --- |
-| a **zárójelben** ($x-1$) | $-1$ | **jobbra** 1-et (fordítva gondolkodsz!) |
-| a **zárójelen kívül** ($+1$) | $+1$ | **felfelé** 1-et (úgy, ahogy írva van) |
+| Hol áll                      | Mi az | Mit csinál                              |
+| ---------------------------- | ----- | --------------------------------------- |
+| a **zárójelben** ($x-1$)     | $-1$  | **jobbra** 1-et (fordítva gondolkodsz!) |
+| a **zárójelen kívül** ($+1$) | $+1$  | **felfelé** 1-et (úgy, ahogy írva van)  |
 
 $$\text{a csúcs}: (1,\,1)$$
 
