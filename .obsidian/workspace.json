@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Egyetem/Matek/Gyakorlo tesztek/uj_oszthatosag_gyakorlas.md",
+                "file": "Egyetem/Matek/Gyakorlo tesztek/uj_komplex szamok.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "uj_oszthatosag_gyakorlas"
+              "title": "uj_komplex szamok"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 543.9000244140625
+    "width": 543.9000244140625,
+    "collapsed": true
   },
   "right": {
     "id": "5f1a29e1f246a065",
@@ -218,10 +219,10 @@
   },
   "active": "b398510aa26d83aa",
   "lastOpenFiles": [
+    "Egyetem/Matek/Gyakorlo tesztek/uj_oszthatosag_gyakorlas.md",
     "Egyetem/Matek/Gyakorlo tesztek/set_theory_zh_prep.md",
     "conflict-files-obsidian-git.md",
     "Egyetem/Logika/logic_practice_6_zh_prep.md",
-    "Egyetem/Matek/Gyakorlo tesztek/uj_oszthatosag_gyakorlas.md",
     "Egyetem/Matek/Gyakorlo tesztek/uj_komplex szamok.md",
     "Egyetem/Logika/logic_foundations_zh_prep.md",
     "Egyetem/Logika/Lt/Logika – Törvény, kielégíthető, ellentmondás (1.14).pdf",
