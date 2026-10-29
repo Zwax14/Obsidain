@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "479030ed2bd035e9",
@@ -210,7 +209,7 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "debcff04183db02a",
+  "active": "45fa884fed2c7ace",
   "lastOpenFiles": [
     "Egyetem/Matek/Gyakorlo tesztek/uj_oszthatosag_gyakorlas.md",
     "Egyetem/Logika/logic_practice_6_zh_prep.md",
